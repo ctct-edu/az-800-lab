@@ -39,7 +39,7 @@
 
 #### <a name="task-2-prepare-the-ad-ds-installation-and-promote-a-remote-server"></a>タスク 2: AD DS インストールの準備をして、リモート サーバーを昇格させる
 
-1. **SEA-ADM1** の **[スタート]** メニューから[Server Manager] を選択して起動させます。起動後、左ペインから**[All Servers(すべてのサーバー)]**を選択します。
+1. **SEA-ADM1** の **[スタート]** メニューから[Server Manager] を選択して起動させます。起動後、左ペインから **[All Servers(すべてのサーバー)]** を選択します。
 
    <img src="./media/AZ-800_Lab1_03.png" alt="AZ-800_Lab1_03" style="zoom:80%;" />
 
