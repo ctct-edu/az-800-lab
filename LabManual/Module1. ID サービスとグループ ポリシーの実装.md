@@ -47,7 +47,7 @@
 
    ![AZ-800_Lab1_04](./media/AZ-800_Lab1_04.png)
    
-3. **[Add Servers(サーバーの追加)]** ダイアログ ボックスで、**[Find Now(今すぐ検索)]**をクリックします。
+3. **[Add Servers(サーバーの追加)]** ダイアログ ボックスで、 **[Find Now(今すぐ検索)]** をクリックします。
 
 ![AZ-800_Lab1_05](./media/AZ-800_Lab1_05.png)
 
@@ -57,7 +57,7 @@
 
 
 
-   5.**SEA-ADM1** の**[Server Manager]**の左ペインから**[AD DS]**を選択し、**SEA-SRV1** への AD DS 役割のインストールが完了していることを確認します。
+   5.**SEA-ADM1** の **[Server Manager]** の左ペインから **[AD DS]** を選択し、**SEA-SRV1** への AD DS 役割のインストールが完了していることを確認します。
 
 ![AZ-800_Lab1_07](./media/AZ-800_Lab1_07.png)
 
@@ -71,7 +71,7 @@
 
 **※通知フラグに[Refresh failed]エラーが表示される場合がありますが、ラボと直接関係のないエラーのため無視して構いません。**
 
-   7.**[Active Directory Domain Services Configuration ウィザード]** の **[Deployment Configuration(展開構成)]** ページの**[Select the deployment operation (展開操作の選択)]** の下で、**[Add a domain controller to an existing domain(既存のドメインにドメイン コントローラーを追加する)]** が選択されていることを確認します。
+   7.**[Active Directory Domain Services Configuration ウィザード]** の **[Deployment Configuration(展開構成)]** ページの **[Select the deployment operation (展開操作の選択)]**  の下で、**[Add a domain controller to an existing domain(既存のドメインにドメイン コントローラーを追加する)]** が選択されていることを確認します。
 
 ![AZ-800_Lab1_09](./media/AZ-800_Lab1_09.png)
 
@@ -106,7 +106,7 @@
 
 ※ページ内に、DNSゾーンの委任に関する警告メッセージが表示されますが、このラボではDNSゾーンの委任は行わないため無視して構いません。
 
-14. **[Additional Options (追加オプション)]** ページで、規定値のまま**[Next (次へ)]** をクリックします。
+14. **[Additional Options (追加オプション)]** ページで、規定値のまま **[Next (次へ)]**  をクリックします。
 
 ※IFMオプションはチェックを外したままで構いません。
 
@@ -114,11 +114,11 @@
 
 16. **[Review Options (オプションの確認)]**ページでは、**[Next (次へ)]** をクリックします。
 
-17. **[Prerequisites Check (前提条件のチェック)]**ページで、緑のチェックが表示されたことを確認したら**[Install (インストール)]**をクリックします。
+17.  **[Prerequisites Check (前提条件のチェック)]** ページで、緑のチェックが表示されたことを確認したら **[Install (インストール)]** をクリックします。
 
-**[This server was successfully configured as a domain contoroller]**のメッセージが表示されたら、**[Close (閉じる)]**をクリックします。
+ **[This server was successfully configured as a domain contoroller]** のメッセージが表示されたら、 **[Close (閉じる)]** をクリックします。
 
-18. **SEA-ADM1** で **[Server Manager]** に切り替え、右上の更新ボタンをクリックします。その後、通知メッセージを確認し**[ Promote this server to a domain controller (このサーバーをドメイン コントローラーに昇格する)]** が表示されなくなっていることを確認します。
+18. **SEA-ADM1** で **[Server Manager]** に切り替え、右上の更新ボタンをクリックします。その後、通知メッセージを確認し **[ Promote this server to a domain controller (このサーバーをドメイン コントローラーに昇格する)]**  が表示されなくなっていることを確認します。
 
 > **注**:SEA-SVR1の再起動が完了するまでに何度か **[更新]** を繰り返す必要がある場合があります。
 
