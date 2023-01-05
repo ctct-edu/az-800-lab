@@ -25,94 +25,104 @@
 
    ![InstallADDS](./media/InstallADDS.png)
 
-1. **SEA-SVR1** に AD DS 役割がインストールされていることを確認するには、**SEA-ADM1**で以下のコマンドレットを実行します。(コマンドレットは、**[ラボガイドタスク1、4番目]**のコマンドレットを直接入力しても構いません。)
+1. **SEA-SVR1** に AD DS 役割がインストールされていることを確認するには、**SEA-ADM1**で以下のWindows PowerShell コマンドレットを実行します。(コマンドレットは、**[ラボガイドタスク1、4番目]**のコマンドレットを直接入力しても構いません。)
 
    ```powershell
    Get-WindowsFeature –ComputerName SEA-SVR1
    ```
 
-1. 4の実行結果で、**Active Directory Domain Services** を探し、**[X]**が入っていれば**SEA-SVR1**にインストール済みです。
+1. 4のコマンドレット実行結果で、**Active Directory Domain Services** を探し、**[X]**が表示されていれば、**SEA-SVR1**にインストール済みです。
+
+   ![AZ-800_Lab1_02](./media/AZ-800_Lab1_02.png)
 
    > **注: インストール プロセスが完了してから、AD DS の役割がインストールされていることが確認できるようになるまで、時間を要する場合があります。 Get-WindowsFeature コマンドレットから結果が得られない場合は、時間をおいて再度実行してみてください。**
 
 #### <a name="task-2-prepare-the-ad-ds-installation-and-promote-a-remote-server"></a>タスク 2: AD DS インストールの準備をして、リモート サーバーを昇格させる
 
-1.  **SEA-ADM1** の **[スタート]** メニューから**[Server Manager]** を選択して起動させます。起動後、左ペインから**[All Servers(すべてのサーバー)]**を選択します。
+1. **SEA-ADM1** の **[スタート]** メニューから**[Server Manager]** を選択して起動させます。起動後、左ペインから**[All Servers(すべてのサーバー)]**を選択します。
 
-![](C:\Users\CTCT\Documents\1.png)
+   <img src="./media/AZ-800_Lab1_03.png" alt="AZ-800_Lab1_03" style="zoom:80%;" />
 
-1.  **[Manage(管理)]** メニューで、**[Add Servers(サーバーの追加)]** を選択します。
+2. **[Manage(管理)]** メニューで、**[Add Servers(サーバーの追加)]** を選択します。
 
-![image-20230105182331204](C:\Users\CTCT\AppData\Roaming\Typora\typora-user-images\image-20230105182331204.png)
+   ![AZ-800_Lab1_04](./media/AZ-800_Lab1_04.png)
+
+
 
 1. **[Add Servers(サーバーの追加)]** ダイアログ ボックスで、**[Find Now(今すぐ検索)]**をクリックします。
 
-   ![image-20230105182544964](C:\Users\CTCT\AppData\Roaming\Typora\typora-user-images\image-20230105182544964.png)
+   ![AZ-800_Lab1_05](./media/AZ-800_Lab1_05.png)
 
 1. サーバーの **[Active Directory]** リストで **[SEA-SVR1]** を選び、矢印を選択して **[選択済み]** リストに追加してから、**[OK]** を選択します。
 
-1. **SEA-ADM1** で、**SEA-SRV1** への AD DS 役割のインストールが完了していること、およびサーバーが**サーバー マネージャー**に追加されたことを確かめます。 その後、**[通知]** フラグ シンボルを選択します。
+    <img src="./media/AZ-800_Lab1_06.png" alt="AZ-800_Lab1_06" style="zoom:80%;" />
 
-1. **SEA-SVR1** の展開後の構成に注意してください。その後、**[このサーバーをドメイン コントローラーに昇格する]** リンクを選択します。
+1. **SEA-ADM1** の**[Server Manager]**の左ペインから[AD DS]を選択し、**SEA-SRV1** への AD DS 役割のインストールが完了していることを確認します。
 
-1. **[Active Directory Domain Services 構成ウィザード]** の **[展開構成]** ページの **[展開操作の選択]** の下で、**[既存のドメインにドメイン コントローラーを追加する]** が選択されていることを確認します。
+    ![AZ-800_Lab1_07](./media/AZ-800_Lab1_07.png)
 
-1. `Contoso.com` ドメインが指定されていることを確かめてから、**[この操作を実行する資格情報を指定する]** セクションで **[変更]** を選択します。
+    
 
-1. **[展開操作の資格情報]** ダイアログ ボックスの **[ユーザー名]** ボックスに「**CONTOSO\\Administrator**」と入力してから、**[パスワード]** ボックスに「**Pa55w.rd**」と入力します。
+1. **[Server Manager]**の右上にある**[通知]** フラグ をクリックします。**SEA-SVR1** の展開後の構成に注目します。**[ Promote this server to a domain controller (このサーバーをドメイン コントローラーに昇格する)]** のリンクをクリックします。
 
-1. **[OK]** を選択し、 **[次へ]** を選択します。
+    ![AZ-800_Lab1_08](./media/AZ-800_Lab1_08.png)
 
-1. **[ドメイン コントローラーのオプション]** ページで、**[ドメイン ネーム システム (DNS) サーバー]** と **[グローバル カタログ (GC)]** チェックボックスがオンになっていることを確かめます。 **[読み取り専用ドメイン コントローラー (RODC)]** チェック ボックスがオフになっていることを確かめます。
+    > **注**: **SEA-SVR1**にAD DSの役割をインストールしただけではドメインコントローラーにならないため、昇格させる必要があります。
 
-1. **[ディレクトリ サービス復元モード (DSRM) パスワードの入力]** セクションで、パスワード「**Pa55w.rd**」を入力して確認し、**[次へ]** を選択します。
+    **※通知フラグに[Refresh failed]エラーが表示される場合がありますが、ラボと直接関係のないエラーのため無視して構いません。**
 
-1. **[DNS オプション]** ページで、**[次へ]** を選択します。
+1. **[Active Directory Domain Services Configuration ウィザード]** の **[Deployment Configuration(展開構成)]** ページの**[Select the deployment operation (展開操作の選択)]** の下で、**[Add a domain controller to an existing domain(既存のドメインにドメイン コントローラーを追加する)]** が選択されていることを確認します。
 
-1. **[追加オプション]** ページで、**[次へ]** を選択します。
+    ![AZ-800_Lab1_09](./media/AZ-800_Lab1_09.png)
 
-1. **[パス]** ページで、**データベース** フォルダー、**ログ ファイル** フォルダー、および **SYSVOL** フォルダーの既定のパス設定を保持し、**[次へ]** を選択します。
+1. `Contoso.com` ドメインが指定されていることを確かめてから、**[Supply the credentials to perform this operation (この操作を実行する資格情報を指定する)]** セクションで **[Change (変更)]** を選択します。
 
-1. 生成された Windows PowerShell スクリプトを開くには、**[オプションの確認]** ページで **[スクリプトの表示]** を選択します。
+    
 
-1. メモ帳で、生成された Windows PowerShell スクリプトを編集します。
+    ![AZ-800_Lab1_10](./media/AZ-800_Lab1_10.png)
 
-    - 番号記号 (**#**) で始まるコメント行を削除します。
-    - **Import-Module** 行を削除します。
-    - 各行の末尾にあるアクサン グラーブ (**`**) を削除します。
-    - 改行を削除します。
+1. **[資格情報]** ダイアログ ボックスに以下の資格情報を入力し、**[OK]** をクリックします。
 
-1. これで、**Install-ADDSDomainController** コマンドとすべてのパラメーターが 1 行に収まりました。 その行の前にカーソルを置き、**[編集]** メニューで、**[すべて選択]** を選んで行全体を選択します。 メニューの **[編集]** を選んでから、**[コピー]** を選択します。
+    | 資格情報       |                            |
+    | -------------- | -------------------------- |
+    | **ユーザー名** | **Contoso\\Administrator** |
+    | **パスワード** | **Pa55w.rd**               |
 
-1. 確認を求めるメッセージが表示されたら、**[はい]** を選択してウィザードをキャンセルします。
+1. 資格情報が変更されたことを確認し、**[Next (次へ)]** をクリックします。
 
-1. Windows PowerShell のコマンド プロンプトで、次のコマンドを入力します。
+1. **[Domain Controller Options]** ページで、**[Domain Name System (DNS) server]** と **[Global Catalog (GC)]** チェックボックスがオンになっていることを確認します。 **[読み取り専用ドメイン コントローラー (RODC)]** チェック ボックスがオフで構いません。
 
-    ```powershell
-    Invoke-Command –ComputerName SEA-SVR1 { }
-    ```
+1. **[Type the Directory Services Restore Mode (DSRM) password (ディレクトリ サービス復元モード (DSRM) パスワードの入力)]** セクションで、以下のパスワードを入力し、**[次へ]** をクリックします。
 
-1. 中かっこ (**{ }**) の間にカーソルを置き、クリップボードからコピーされたスクリプト行の内容を貼り付けます。 完全なコマンドは次の形式になるはずです。
+    | パスワード   |
+    | ------------ |
+    | **Pa55w.rd** |
 
-    ```powershell
-    Invoke-Command –ComputerName SEA-SVR1 {Install-ADDSDomainController -NoGlobalCatalog:\$false -CreateDnsDelegation:$false -Credential (Get-Credential) -CriticalReplicationOnly:$false -DatabasePath "C:\Windows\NTDS" -DomainName "Contoso.com" -InstallDns:$true -LogPath "C:\Windows\NTDS" -NoRebootOnCompletion:$false -SiteName "Default-First-Site-Name" -SysvolPath "C:\Windows\SYSVOL" -Force:\$true}
-    ```
+    ![AZ-800_Lab1_11](./media/AZ-800_Lab1_11.png)
 
-1. コマンドを呼び出すには、Enter キーを押します。
+    
 
-1. **[Windows PowerShell 資格情報要求]** ダイアログ ボックスの **[ユーザー名]** ボックスに「**CONTOSO\\Administrator**」と入力し、**[パスワード]** ボックスに「**Pa55w.rd**」と入力して、**[OK]** を選択します。
+1. **[DNS Options]** ページでは規定値のまま、**[Next (次へ)]** をクリックします。
 
-1. パスワードの入力を求めるメッセージが表示されたら、**[SafeModeAdministratorPassword]** テキスト ボックスに「**Pa55w.rd**」と入力し、Enter キーを押します。
+     ※ページ内に、DNSゾーンの委任に関する警告メッセージが表示されますが、このラボではDNSゾーンの委任は行わないため無視して構いません。
 
-1. 確認を求めるメッセージが表示されたら、**[SafeModeAdministratorPassword の確認]** テキスト ボックスに「**Pa55w.rd**」と入力し、Enter キーを押します。
+1. **[Additional Options (追加オプション)]** ページで、規定値のまま**[Next (次へ)]** をクリックします。
 
-1. コマンドが実行され、**正常な状態**というメッセージが返されるまで待ちます。 **SEA-SVR1** 仮想マシンが再起動します。
+     ※IFMオプションはチェックを外したままで構いません。
 
-1. ファイルを保存せずにメモ帳を閉じます。
+1. **[Paths (パス)]** ページでは、既定のパスのまま、**[Next (次へ)]** をクリックします。
 
-1. **SEA-SVR1** が再起動した後、**SEA-ADM1** で **[サーバー マネージャー]** に切り替え、左側の **[AD DS]** ノードを選択します。 **SEA-SVR1** がサーバーとして追加されたこと、および警告通知が表示されなくなったことに注意してください。
+1. **[Review Options (オプションの確認)]**ページでは、**[Next (次へ)]** をクリックします。
 
-    > **注**: **[更新]** を選択する必要がある場合があります。
+1. **[Prerequisites Check (前提条件のチェック)]**ページで、緑のチェックが表示されたことを確認したら**[Install (インストール)]**をクリックします。
+
+1. **[This server was successfully configured as a domain contoroller]**のメッセージが表示されたら、**[Close (閉じる)]**をクリックします。
+
+1. **SEA-ADM1** で **[Server Manager]** に切り替え、右上の更新ボタンをクリックします。その後、通知メッセージを確認し**[ Promote this server to a domain controller (このサーバーをドメイン コントローラーに昇格する)]** が表示されなくなっていることを確認します。
+
+     > **注**:SEA-SVR1の再起動が完了するまでに何度か **[更新]** を繰り返す必要がある場合があります。
+
+     ![AZ-800_Lab1_12](./media/AZ-800_Lab1_12.png)
 
 #### <a name="task-3-manage-objects-in-ad-ds"></a>タスク 3: AD DS でオブジェクトを管理する
 
