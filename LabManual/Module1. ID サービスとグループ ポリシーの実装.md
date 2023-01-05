@@ -30,7 +30,7 @@ lab:
 
    **※実行結果の[Success]が[True]とかえってくれば、インストール完了です。**
 
-   ![1-1](C:\Users\CTCT\Documents\GitHub\az-800-lab\LabManual\media/1-1.png)
+   ![1-1](C:\Users\CTCT\Documents\GitHub\az-800-lab\LabManual\media\1-1.png)
 
 1. **SEA-SVR1** に AD DS 役割がインストールされていることを確認するには、**SEA-ADM1**で以下のコマンドレットを実行します。(コマンドレットは、**[ラボガイドタスク1、4番目]**のコマンドレットを直接入力しても構いません。)
 
