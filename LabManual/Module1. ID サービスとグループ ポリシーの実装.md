@@ -31,7 +31,7 @@
    Get-WindowsFeature –ComputerName SEA-SVR1
    ```
 
-1. 4のコマンドレット実行結果で、**Active Directory Domain Services** を探し、**[X]**が表示されていれば、**SEA-SVR1**にインストール済みです。
+1. 4のコマンドレット実行結果で、**Active Directory Domain Services** を探し、**[X]** が表示されていれば、**SEA-SVR1**にインストール済みです。
 
    ![AZ-800_Lab1_02](./media/AZ-800_Lab1_02.png)
 
