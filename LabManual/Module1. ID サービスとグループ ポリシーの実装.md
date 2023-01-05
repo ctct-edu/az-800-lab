@@ -1,10 +1,3 @@
----
-lab:
-  title: 'ラボ: ID サービスおよびグループ ポリシーの実装'
-  type: Answer Key
-  module: 'Module 1: Identity services in Windows Server'
----
-
 # <a name="lab-answer-key-implementing-identity-services-and-group-policy"></a>Lab01: ID サービスおよびグループ ポリシーの実装
 
 ## <a name="exercise-1-deploying-a-new-domain-controller-on-server-core"></a>演習 1: Server Core への新しいドメイン コントローラーの展開
@@ -30,7 +23,7 @@ lab:
 
    **※実行結果の[Success]が[True]とかえってくれば、インストール完了です。**
 
-   ![InstallADDS](C:\Users\CTCT\Documents\GitHub\az-800-lab\LabManual\media\InstallADDS.png)
+   ![InstallADDS](./media/InstallADDS.png)
 
 1. **SEA-SVR1** に AD DS 役割がインストールされていることを確認するには、**SEA-ADM1**で以下のコマンドレットを実行します。(コマンドレットは、**[ラボガイドタスク1、4番目]**のコマンドレットを直接入力しても構いません。)
 
