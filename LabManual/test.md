@@ -1,1 +1,1 @@
-![InstallADDS](media\InstallADDS.png)
+![](C:\Users\CTCT\Documents\GitHub\az-800-lab\LabManual\media\InstallADDS.png)
