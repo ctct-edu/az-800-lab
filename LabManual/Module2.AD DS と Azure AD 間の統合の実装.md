@@ -54,7 +54,7 @@ Microsoft Azure Active Directory (Azure AD) を使用して Azure リソース�
 
 ### <a name="task-1-create-a-custom-domain-name-in-azure"></a>タスク 1: Azure でカスタム ドメイン名を作成する。
 
-1. **SEA-ADM1** で Microsoft Edge を起動してから、[Azure portal](https://portal.azure.com) に移動します。
+1. **SEA-ADM1** で Microsoft Edge を起動してから、Azure Portal ( https://portal.azure.com )に移動します。
 
 1. ラボで提供されている資格情報を使用して、Azure portal にサインインします。
 
@@ -188,7 +188,7 @@ Microsoft Azure Active Directory (Azure AD) を使用して Azure リソース�
 
    ![AZ-800_Lab2_19](./media/AZ-800_Lab2_19.png)
 
-1. **IdFix** ウィンドウの、**[ACTION] **ドロップダウン メニューが **[COMPLETE]** に変更されたことを確認し、ウィンドウを × で閉じます。
+1. **IdFix** ウィンドウの、 **[ACTION]** ドロップダウン メニューが **[COMPLETE]** に変更されたことを確認し、ウィンドウを × で閉じます。
 
    ![AZ-800_Lab2_20](./media/AZ-800_Lab2_20.png)
 
@@ -208,7 +208,7 @@ Microsoft Azure Active Directory (Azure AD) を使用して Azure リソース�
 
 ### <a name="task-1-install-and-configure-azure-ad-connect"></a>タスク 1: Azure AD Connect のインストールと構成
 
-1. **SEA-ADM1** で Microsoft Edge を起動し 、[Azure Portal](https://portal.azure.com)  にログインします。 Azure Portal の検索ボックスで **[Azure Active Directory]** を検索し、左のナビゲーションペインの一覧から  **[Azure AD Connect]** を参照します。
+1. **SEA-ADM1** で Microsoft Edge を起動し 、Azure Portal (https://portal.azure.com) にログインします。 Azure Portal の検索ボックスで **[Azure Active Directory]** を検索し、左のナビゲーションペインの一覧から  **[Azure AD Connect]** を参照します。
 
    ![AZ-800_Lab2_22](./media/AZ-800_Lab2_22.png)
 
@@ -216,7 +216,7 @@ Microsoft Azure Active Directory (Azure AD) を使用して Azure リソース�
 
    ![AZ-800_Lab2_23](./media/AZ-800_Lab2_23.png)
 
-1.  **[Microsoft Azure Active Directory Connect]** ページで、 [Download] をクリックします。
+1.  **[Microsoft Azure Active Directory Connect]** ページで、 **[Download]** をクリックします。
 
    ![AZ-800_Lab2_24](./media/AZ-800_Lab2_24.png)
 
