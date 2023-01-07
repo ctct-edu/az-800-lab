@@ -276,7 +276,7 @@ Azure AD Connect をインストールして構成したので、同期のメカ
 1. Synchronization Service Manager で同期を検証する。
 1. Active Directory でユーザー アカウントを更新する。
 1. Active Directory でユーザー アカウントを作成する。
-1. Azure AD に対する変更を同期する。
+1. Azure AD に変更を同期する。
 1. Azure AD での変更を検証する。
 
 ### <a name="task-1-verify-synchronization-in-the-azure-portal"></a>タスク 1: Azure portal で同期を検証する
@@ -295,7 +295,7 @@ Azure AD Connect をインストールして構成したので、同期のメカ
 
    > **注**: ディレクトリ同期が開始されると、Active Directory オブジェクトが Azure AD Portalに表示されるまでに 15 分以上要する場合があります。
 
-1. Azure Active Directory に戻り、左ナビゲーションペインの一覧から**[グループ]** を参照します。
+1. Azure Active Directory に戻り、左ナビゲーションペインの一覧から **[グループ]**  を参照します。
 
    ![AZ-800_Lab2_34](./media/AZ-800_Lab2_34.png)
 
@@ -358,7 +358,7 @@ Azure AD Connect をインストールして構成したので、同期のメカ
 
 5. 作成したら、 **[Finish]** をクリックしてダイアログボックスを閉じます。
 
-### <a name="task-5-sync-changes-to-azure-ad"></a>タスク 5: Azure AD に対する変更を同期する
+### <a name="task-5-sync-changes-to-azure-ad"></a>タスク 5: Azure AD に変更を同期する
 
 1. **SEA-ADM1** で、管理者として **Windows PowerShell** を起動します。
 1. **Windows PowerShell** コンソールで、次のコマンドレットを実行し、Contoso.com ドメインで変更したユーザー情報や作成したユーザーアカウントを同期します。
@@ -367,9 +367,9 @@ Azure AD Connect をインストールして構成したので、同期のメカ
    Start-ADSyncSyncCycle
    ```
 
-   > **注**: 同期サイクルの開始後、Active Directory オブジェクトが Azure AD ポータルに表示されるまでに 15 分かかることがあります。
+   > **注**: 同期サイクルの開始後、Active Directory オブジェクトが Azure AD ポータルに表示されるまでに 15 分程度要することがあります。
 
-3. 実行結果に [Success] と返ってきたら、Windows PowerShell コンソールを × で閉じて終了します。
+3. 実行結果に **[Success]** と返ってきたら、Windows PowerShell コンソールを × で閉じて終了します。
 
 ### <a name="task-6-verify-changes-in-azure-ad"></a>タスク 6: Azure AD での変更を検証する
 
