@@ -496,121 +496,196 @@ Azure AD Connect をインストールして構成したので、同期のメカ
 
 1. 構成が完了したら、 **[Exit]** をクリックし、 **[Microsoft Azure Active Directory Connect]** ウィンドウを閉じます。
 
-#### <a name="task-3-enable-pass-through-authentication-in-azure-ad-connect"></a>タスク 3: Azure AD Connect でパススルー認証を有効にする
+### <a name="task-3-enable-pass-through-authentication-in-azure-ad-connect"></a>タスク 3: Azure AD Connect でパススルー認証を有効にする
 
-1. **SEA-ADM1** の **[スタート]** メニューで、**[Azure AD Connect]** を展開し、**[Azure AD Connect]** を選択します。
-1. **[Microsoft Azure Active Directory Connect]** ウィンドウで、**[構成]** を選択します。
-1. **[追加のタスク]** ページで、**[ユーザー サインインの変更]** を選択します。
-1. **[Azure AD への接続]** ページで、演習 1 で作成した Azure AD グローバル管理者ユーザー アカウントのユーザー名とパスワードを入力します。
-1. **[ユーザー サインイン]** ページで、**[パススルー認証]** を選択します。
-1. **[シングル サインオンを有効にする]** チェック ボックスがオンになっていることを確認します。
-1. **[シングル サインオンを有効にする]** ページで、**[資格情報の入力]** を選択します。
-1. **[フォレストの資格情報]** ダイアログ ボックスで、次の資格情報を使用して認証します。
+1. **SEA-ADM1** の **[スタート]** メニューで、**[Azure AD Connect]** を展開し、**[Azure AD Connect]** を起動します。
 
-   - ユーザー名: **Administrator**
-   - パスワード: **Pa55w.rd**
+1. **[Microsoft Azure Active Directory Connect]** ウィンドウで、**[Configure (構成)]** をクリックします。
 
-1. **[シングル サインオンを有効にする]** ページで、**[資格情報の入力]** の横に緑色のチェック マークが表示されているのを確認します。
-1. **[構成の準備完了]** ページで、実行するアクションの一覧を確認し、**[構成]** を選択します。
-1. 構成が完了したら、**[Microsoft Azure Active Directory Connect]** ウィンドウを閉じます。
+1. **[Additional tasks (追加のタスク)]** 画面で、**[Change user sign-in (ユーザー サインインの変更)]** を選択し、 **[Next (次へ)]** をクリックします。
 
-#### <a name="task-4-verify-pass-through-authentication-in-azure"></a>タスク 4: Azure でパススルー認証を検証する
+   <img src="./media/AZ-800_Lab2_62.png" alt="AZ-800_Lab2_62" style="zoom:67%;" />
 
-1. **SEA-ADM1** の、Azure portal で **[Azure Active Directory]** ページから **[Azure AD Connect]** ページを参照します。
-1. **[Azure AD Connect]** ページの、**[ユーザー サインイン]** の下に表示されている情報を確認します。
-1. **[ユーザー サインイン]** で、**[シームレス シングル サインオン]** を選択します。
-1. **[シームレス シングル サインオン]** ページで、オンプレミスのドメイン名を確認します。
-1. **[シームレス シングル サインオン]** ページから、 **[パススルー認証]** ページを参照します。
-1. **[パススルー認証]** ページで、 **[認証エージェント]** の下にあるサーバーのリストを確認します。
+1. **[Connect to Azure AD (Azure AD への接続)]** 画面で、 Azure AD グローバル管理者 アカウントのユーザー名とパスワードを入力して、 **[Next (次へ)]** をクリックします。
+
+1. **[User sign-in (ユーザー サインイン)]** 画面で、**[Pass-through authentication (パススルー認証)]** を選択し、 **[Enable single sign-on (シングル サインオンを有効にする)]** のチェックボックスがオンになっていることを確認したら、 **[Next (次へ)]** をクリックします。
+
+   <img src="./media/AZ-800_Lab2_63.png" alt="AZ-800_Lab2_63" style="zoom:67%;" />
+
+   
+
+1. **[Enable single sign-on (シングル サインオンを有効にする)]** 画面で、**[Enter credentials (資格情報の入力)]** をクリックします。
+
+   ![AZ-800_Lab2_64](./media/AZ-800_Lab2_64.png)
+
+1. **[Forest credentials]** ダイアログ ボックスで、次の資格情報を入力し、 **[OK]** をクリックします。
+
+   - Username: **Administrator**
+   - Password: **Pa55w.rd**
+
+1. **[Enable single sign-on (シングル サインオンを有効にする)]** ページで、**[Enter credentials (資格情報の入力)]** の横に緑色のチェック マークが表示されているのを確認したら、 [Next (次へ)] をクリックします。
+
+   ![AZ-800_Lab2_66](./media/AZ-800_Lab2_66.png)
+
+1. **[Ready to configure (構成の準備完了)]** 画面で、実行するアクションの一覧を確認し、**[Configure (構成)]** をクリックします。※構成が完了するまでに数分かかります。
+
+1. 構成が完了したら、 **[Exit]** をクリックし、 **[Microsoft Azure Active Directory Connect]** ウィンドウを閉じます。
+
+### <a name="task-4-verify-pass-through-authentication-in-azure"></a>タスク 4: Azure でパススルー認証を検証する
+
+1. **SEA-ADM1** の、Azure portal で **[Azure Active Directory]** の左ナビゲーションペインの一覧から、 **[Azure AD Connect]** を選択します。
+
+1. **[Azure AD Connect]** ページの、**[ユーザー サインイン]** の下に表示されている、**[シームレス なシングル サインオン]** を選択します。
+
+   <img src="./media/AZ-800_Lab2_67.png" alt="AZ-800_Lab2_67" style="zoom:67%;" />
+
+1. **[シームレス シングル サインオン]** ページで、オンプレミスのドメイン名を確認します。※オンプレミスドメイン名は、Contoso.com になっています。
+
+   <img src="./media/AZ-800_Lab2_68.png" alt="AZ-800_Lab2_68" style="zoom:80%;" />
+
+1. **[Azure AD Connect]** ページ に戻り、 **[ユーザーサインオン]** から、 **[パススルー認証]** を選択します。
+
+   <img src="./media/AZ-800_Lab2_69.png" alt="AZ-800_Lab2_69" style="zoom:67%;" />
+
+1. **[パススルー認証]** ページで、 **[認証エージェント]** の下にあるサーバー名を確認します。
+
+   ![AZ-800_Lab2_70](./media/AZ-800_Lab2_70.png)
 
    > **注**: Azure AD Authentication エージェントを環境内の複数のサーバーにインストールするには、Azure portal の **[パススルー認証]** ページからバイナリーをダウンロードします。
 
-#### <a name="task-5-install-and-register-the-azure-ad-password-protection-proxy-service-and-dc-agent"></a>タスク 5: Azure AD パスワード保護プロキシ サービスと DC エージェントをインストールして登録する
+### <a name="task-5-install-and-register-the-azure-ad-password-protection-proxy-service-and-dc-agent"></a>タスク 5: Azure AD パスワード保護プロキシ サービスと DC エージェントをインストールして登録する
 
-1. **SEA-ADM1** で Microsoft Edge を起動し、Microsoft ダウンロード Web サイトを参照し、インストーラーをダウンロードできる「**Windows Server Active Directory 用 Azure AD パスワード保護**」のページを参照して、**[ダウンロード]** を選択します。
-1. **AzureADPasswordProtectionProxySetup.exe** と **AzureADPasswordProtectionDCAgentSetup.msi** を **SEA-ADM1** にダウンロードします。
+1. **SEA-ADM1** の Microsoft Edge で、Azure Portal とは別のタブを開き、Microsoft ダウンロード Web サイトを(https://www.microsoft.com/en-us/download/details.aspx?id=57071) を参照します。
 
-   > **注**: ドメイン コントローラーではないサーバーにプロキシ サービスをインストールすることをお勧めします。 さらに、プロキシ サービスは、Azure AD Connect エージェントと同じサーバーにはインストールできません。 プロキシ サービスは **SEA-SVR1** に、パスワード保護 DC エージェントは **SEA-DC1** にインストールします。
+1. Microsoft ダウンロード Web サイトにある、「**Azure AD Password Protection for Windows Server Active Directory**」の、**[Download]** をクリックします。
 
-1. **SEA-ADM1** の **Windows PowerShell** コンソールで、次のコマンドを入力し、インターネットからファイルがダウンロードされたことを示す Zone.Identifier 代替データ ストリームを削除します。
+   ![AZ-800_Lab2_71](./media/AZ-800_Lab2_71.png)
+
+1. **AzureADPasswordProtectionProxySetup.exe** と **AzureADPasswordProtectionDCAgentSetup.msi** を選択し、 **[Next]** をクリックします。
+
+   ![AZ-800_Lab2_72](./media/AZ-800_Lab2_72.png)
+
+   > **注**: プロキシ サービスは、ドメインコントローラー以外のサーバーにインストールすることが推奨されています。 また、プロキシ サービスは、Azure AD Connect エージェントと同じサーバーにはインストールできません。 このラボでは、プロキシ サービスは **SEA-SVR1** 、パスワード保護 DC エージェントは **SEA-DC1** にインストールします。
+
+1. ブラウザに表示される、「Download multipul files (複数のファイルをダウンロード)」ダイアログボックスで [Allow (許可)] をクリックします。
+
+   ![AZ-800_Lab2_73](./media/AZ-800_Lab2_73.png)
+
+1. **SEA-ADM1** の**Windows PowerShell(管理者)** で次のコマンドレットを実行し、インターネットからファイルがダウンロードされたことを示す Zone.Identifier 代替データ ストリームを削除します。
 
    ```powershell
-   Get-ChildItem -Path "$env:USERPROFILE\Downloads -File | Unblock-File
+   Get-ChildItem -Path "$env:USERPROFILE\Downloads" -File | Unblock-File
    ```
-1. 次のコマンドを実行して **SEA-SVR1** に **C:\Temp** ディレクトリを作成し、**AzureADPasswordProtectionProxySetup.exe** インストーラーをそのディレクトリにコピーして、インストールを起動します。
+
+1. 次のコマンドレットを実行して **SEA-SVR1** に **C:\Temp** ディレクトリを作成し、**AzureADPasswordProtectionProxySetup.exe** インストーラーをそのディレクトリにコピーして、インストールを実行します。
 
    ```powershell
    New-Item -Type Directory -Path '\\SEA-SVR1.contoso.com\C$\Temp' -Force
+   
    Copy-Item -Path "$env:USERPROFILE\Downloads\AzureADPasswordProtectionProxySetup.exe" -Destination '\\SEA-SVR1.contoso.com\C$\Temp\'
-   Invoke-Command -ComputerName SEA-SVR1.contoso.com -ScriptBlock { Start-Process -FilePath C:\Temp\AzureADPasswordProtectionProxySetup.exe -ArgumentList `/quiet /log C:\Temp\AzureADPPProxyInstall.log` -Wait }
+   
+   Invoke-Command -ComputerName SEA-SVR1.contoso.com -ScriptBlock { Start-Process -FilePath C:\Temp\AzureADPasswordProtectionProxySetup.exe -ArgumentList '/quiet /log C:\Temp\AzureADPPProxyInstall.log' -Wait }
    ```
-1. 次のコマンドを実行して **SEA-DC1** に **C:\Temp** ディレクトリを作成し、**AzureADPasswordProtectionDCAgentSetup.msi** インストーラーをそのディレクトリにコピーし、インストールを起動して、インストールが完了したらドメイン コントローラーを再起動します。
+
+1. 次のコマンドレットを実行して **SEA-DC1** に **C:\Temp** ディレクトリを作成し、**AzureADPasswordProtectionDCAgentSetup.msi** インストーラーをそのディレクトリにコピーし、インストールを実行します。インストールが完了したらドメイン コントローラーを再起動します。
 
    ```powershell
    New-Item -Type Directory -Path '\\SEA-DC1.contoso.com\C$\Temp' -Force
+   
    Copy-Item -Path "$env:USERPROFILE\Downloads\AzureADPasswordProtectionDCAgentSetup.msi" -Destination '\\SEA-DC1.contoso.com\C$\Temp\'
+   
    Invoke-Command -ComputerName SEA-DC1.contoso.com -ScriptBlock { Start-Process msiexec.exe -ArgumentList '/i C:\Temp\AzureADPasswordProtectionDCAgentSetup.msi /quiet /qn /norestart /log C:\Temp\AzureADPPInstall.log' -Wait }
+   
    Restart-Computer -ComputerName SEA-DC1.contoso.com -Force
    ```
-1. 次のコマンドを実行して、インストールによって Azure AD パスワード保護を実装するために必要なサービスが作成されたことを確認します。
+
+1. 次のコマンドレットを実行して、 Azure AD パスワード保護を実装するために必要なサービスが作成されたことを確認します。※結果が返ってくるまでに数分かかります。
 
    ```powershell
    Get-Service -Computer SEA-SVR1 -Name AzureADPasswordProtectionProxy | fl
    Get-Service -Computer SEA-DC1 -Name AzureADPasswordProtectionDCAgent | fl
    ```
 
-   > **注**: 各サービスの状態が **[実行中]** であることを確認します。
+   > **注**: **[Status]** が **[Running]** であることを確認します。
 
-1. **SEA-SVR1** への PowerShell リモート処理セッションを確立するには、次のコマンドを実行します。
+1. 以下のコマンドレットを実行し、 **SEA-SVR1** への PowerShell リモート処理セッションを確立します。
 
    ```powershell
    Enter-PSSession -ComputerName SEA-SVR1
    ```
 
-1. PowerShell リモート処理セッション内で次のコマンドを入力し、プロキシ サービスを Active Directory に登録します (プレースホルダー `<Azure_AD_Global_Admin>` を演習 1 で作成した Azure AD グローバル管理者ユーザー アカウントの完全修飾ユーザー プリンシパル名に置き換えます)。
+1. PowerShell リモート処理セッション内で次のコマンドを入力し、プロキシ サービスを Active Directory に登録します (-AccountUpn パラメーターの値、 `<Azure_AD_Global_Admin>` は、 Azure AD グローバル管理者ユーザー アカウントのユーザー プリンシパル名に置き換えます)。
 
    ```powershell
    Register-AzureADPasswordProtectionProxy -AccountUpn <Azure_AD_Global_Admin> -AuthenticateUsingDeviceCode
    ```
 
-1. プロンプトに従い、演習 1 で作成 Azure AD グローバル管理者ユーザー アカウントを使用して認証を行います。 
-1. PowerShell リモート処理セッションを終了します。
-1. **Windows PowerShell** コンソールで、次のコマンドを入力してから、Enter キーを押して、**SEA-DC1** への PowerShell リモート処理セッションを開始します。
+1. Microsoft Edgeから、https://microsoft.com/devicelogin、にアクセスし、実行結果に表示された [code] を入力して認証します。
+
+1. プロンプトが表示されたら、Azure AD グローバル管理者ユーザー アカウントの資格情報を使用して認証します。
+
+1. Windows PowerShell コンソールに戻り、次のコマンドレットを実行して、SEA-SVR1へのPowerShell リモート セッションを終了します。
 
    ```powershell
-   Enter-PSSession -ComputerName SEA-DC1
+   Exit-PSsession
    ```
 
-1. PowerShell リモート処理セッション内で次のコマンドを入力し、プロキシ サービスを Active Directory に登録します (プレースホルダー `<Azure_AD_Global_Admin>` を演習 1 で作成した Azure AD グローバル管理者ユーザー アカウントの完全修飾ユーザー プリンシパル名に置き換えます)。
+   
+
+1. **Windows PowerShell** コンソールで、次のコマンドレットを実行して、**SEA-DC1** への PowerShell リモート処理セッションを開始します。
+
+    ```powershell
+    Enter-PSSession -ComputerName SEA-DC1
+    ```
+
+1. PowerShell リモート処理セッション内で次のコマンドレットを実行し、プロキシ サービスを Active Directory に登録します (-AccountUpn の値、 `<Azure_AD_Global_Admin>` は、 Azure AD グローバル管理者ユーザー アカウントのユーザー プリンシパル名に置き換えます)。
+
+    ```powershell
+    Register-AzureADPasswordProtectionForest -AccountUpn <Azure_AD_Global_Admin> -AuthenticateUsingDeviceCode
+    ```
+
+1. Microsoft Edgeから、https://microsoft.com/devicelogin、にアクセスし、実行結果に表示された [code] を入力して認証します。
+
+1. Windows PowerShell コンソールに戻り、次のコマンドレットを実行して、SEA-DC1へのPowerShell リモート セッションを終了します。
 
    ```powershell
-   Register-AzureADPasswordProtectionForest -AccountUpn <Azure_AD_Global_Admin> -AuthenticateUsingDeviceCode
+   Exit-PSsession
    ```
 
-1. プロンプトに従い、演習 1 で作成 Azure AD グローバル管理者ユーザー アカウントを使用して認証を行います。 
-1. PowerShell リモート処理セッションを終了します。
+### <a name="task-6-enable-password-protection-in-azure"></a>タスク 6: Azure でパスワード保護を有効にする
 
-#### <a name="task-6-enable-password-protection-in-azure"></a>タスク 6: Azure でパスワード保護を有効にする
+1. **SEA-ADM1** で、Azure portal が表示されている Microsoft Edge ウィンドウに切り替え、**[Azure Active Directory]** の左ナビゲーションペインの一覧から、**[セキュリティ]** を選択します。
 
-1. **SEA-ADM1** で、Azure portal が表示されている Microsoft Edge ウィンドウに切り替え、**[Azure Active Directory]** ページに戻り、**[セキュリティ]** ページを閲覧します。
-1. **[セキュリティ]** ページで、**[認証方法]** を選択します。
-1. **[認証方法]** ページで、**[パスワード保護]** を選択します。
-1. **[パスワード保護]** ページで、**[カスタム リストの適用]** を有効にします。
-1. **[カスタム禁止パスワード リスト]** テキスト ボックスに、次の単語を (1 行に 1 語) 入力します。
+   ![AZ-800_Lab2_74](./media/AZ-800_Lab2_74.png)
+
+1. **[セキュリティ]** ページの一覧から、**[認証方法]** を選択します。
+
+   <img src="./media/AZ-800_Lab2_75.png" alt="AZ-800_Lab2_75" style="zoom:80%;" />
+
+1. **[認証方法]** ページの一覧から、**[パスワード保護]** を選択します。
+
+   <img src="./media/AZ-800_Lab2_76.png" alt="AZ-800_Lab2_76" style="zoom:80%;" />
+
+1.  **[パスワード保護]** ページで、 **[カスタム リストの適用]** のスライダーを **[はい]** に変更し、カスタム禁止パスワードの一覧に以下の単語を入力します。
 
    - **Contoso**
    - **ロンドン**
 
    > **注**: 禁止パスワードの一覧は、ご自分の組織に関連する単語である必要があります。
 
-1. **[Windows Server Active Directory でパスワード保護を有効にする]** の設定が有効になっていることを確認します。 
+1.  **[Windows Server Active Directory でパスワード保護を有効にする]**  のスライダーが **[はい]** に設定されていることを確認します。 
+
 1. **[モード]** が **[監査]** に設定されていることを確認し、変更を保存します。
 
-## <a name="exercise-6-cleaning-up"></a>演習 6: クリーンアップ
+   ※カスタム禁止パスワードリストが適用されるまでに、数時間要する場合があります。
+
+   <img src="./media/AZ-800_Lab2_77.png" alt="AZ-800_Lab2_77" style="zoom:80%;" />
+
+## <a name="exercise-6-cleaning-up"></a>オプション: クリーンアップ
 
 ### <a name="scenario"></a>シナリオ
 
-オンプレミスの Active Directory から Azure への同期を無効にします。 これには、Azure AD Connect の削除と Azure との同期の無効化が含まれます。
+オンプレミスの Active Directory から Azure への同期を無効にします。 
 
 この演習の主なタスクは次のとおりです。
 
@@ -619,10 +694,27 @@ Azure AD Connect をインストールして構成したので、同期のメカ
 
 #### <a name="task-1-uninstall-azure-ad-connect"></a>タスク 1 Azure AD Connect のアンインストール
 
-1. **SEA-ADM1** で、 **[コントロール パネル]** を開きます。
-1. **[プログラムのアンインストールまたは変更]** 機能を使用して、**[Microsoft Azure AD Connect]** をアンインストールします。
+1. **SEA-ADM1** の検索ボックスで、 **[Control Panel]** を検索し、検索結果に表示された **[Control Panel]** を選択します。
 
-#### <a name="task-2-disable-directory-synchronization-in-azure"></a>タスク 2: Azure でディレクトリ同期を無効にする
+1. **[Programs]** の **[Uninstall a program]** を選択します。
+
+   <img src="./media/AZ-800_Lab2_78.png" alt="AZ-800_Lab2_78" style="zoom:80%;" />
+
+1. **Uninstall or change a program** の一覧から、**[Microsoft Azure AD Connect]** を右クリックし、アンインストールをクリックします。
+
+   <img src="./media/AZ-800_Lab2_79.png" alt="AZ-800_Lab2_79" style="zoom:80%;" />
+
+4.  **[Programs and features]** ダイアログボックスで確認メッセージが表示されたら、 **[Yes]** をクリックします。
+
+   ![AZ-800_Lab2_80](./media/AZ-800_Lab2_80.png)
+
+5.  **[Uninstall Azure AD Connect]** ウィンドウで、 **[Remove]** を選択します。
+
+   ※アンインストールが完了するまでに数分要します。
+
+6. Azure AD Connect がアンインストールされたら、 **[Uninstall Azure AD Connect]**  ウィンドウで  **[Exit]** を選択します。
+
+### <a name="task-2-disable-directory-synchronization-in-azure"></a>タスク 2: Azure でディレクトリ同期を無効にする
 
 1. **SEA-ADM1** で、**Windows PowerShell** ウィンドウに切り替えます。
 1. **Windows PowerShell** コンソールで、次のコマンドを実行し、Azure AD 用の Microsoft Online モジュールをインストールします。
@@ -647,6 +739,4 @@ Azure AD Connect をインストールして構成したので、同期のメカ
    Set-MsolDirSyncEnabled -EnableDirSync $false
    ```
 
-### <a name="prepare-for-the-next-module"></a>次のモジュールの準備
-
-次のモジュールの準備が完了したら、ラボを終了します。
+### 
