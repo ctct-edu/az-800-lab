@@ -397,7 +397,7 @@ Azure AD Connect をインストールして構成したので、同期のメカ
 
 ### <a name="scenario"></a>シナリオ
 
-オンプレミスの Azure Active Directory のセキュリティをさらに強化し、管理オーバーヘッドを最小限に抑えることができる Azure AD 統合機能を特定する必要があります。 また、Windows Server Active Directory 用の Azure AD パスワード保護と、パスワード ライトバックを使用するセルフサービス パスワード リセットを実装することも希望しています。
+オンプレミスの Azure Active Directory のセキュリティをさらに強化し、管理オーバーヘッドを最小限に抑えることができる Azure AD 統合機能を検証します。 また、Windows Server Active Directory 用の Azure AD パスワード保護と、パスワード ライトバックを使用するセルフサービス パスワード リセットを実装も検討することにしました。
 
 この演習の主なタスクは次のとおりです。
 
@@ -408,27 +408,93 @@ Azure AD Connect をインストールして構成したので、同期のメカ
 1. Azure AD パスワード保護プロキシ サービスと DC エージェントをインストールして登録する。
 1. Azure でパスワード保護を有効にする。
 
-#### <a name="task-1-enable-self-service-password-reset-in-azure"></a>タスク 1: Azure でセルフサービス パスワード リセットを有効にする
+### <a name="task-1-enable-self-service-password-reset-in-azure"></a>タスク 1: Azure でセルフサービス パスワード リセットを有効にする
 
-1. **SEA-ADM1** の、Azure portal が表示されている Microsoft Edge ウィンドウで、Azure AD の **[ライセンス]** ページを参照し、**[Azure AD Premium P2]** 無料試用版をアクティブにします。 
-1. 演習 1 で作成した Azure AD グローバル管理者ユーザー アカウントに Azure AD Premium P2 ライセンスを割り当てます。
-1. Azure portal で、Azure AD の **[パスワードのリセット]** ページを参照します。
-1. **[パスワードのリセット]** ページで、構成を適用するユーザーのスコープを選択できることに注目してください。
+1. **SEA-ADM1** で、Microsoft Edge でAzure portal にグローバル管理者としてサインインします。Azure AD(Azure Active Directory) の 左のナビゲーションペインの一覧から **[ライセンス]** を参照します。
 
-   > **注**: パスワード リセット機能は、このラボの後半で必要な構成手順が壊れるので、有効にしないでください。
+   ![AZ-800_Lab2_46](./media/AZ-800_Lab2_46.png)
 
-#### <a name="task-2-enable-password-writeback-in-azure-ad-connect"></a>タスク 2: Azure AD Connect でパスワード ライトバックを有効にする
+1. **[ライセンス]** ページで、 **[すべての製品]** を選択します。
 
-1. **SEA-ADM1** で、**Azure AD Connect** を開きます。
-1. **[Microsoft Azure Active Directory Connect]** ウィンドウで、**[構成]** を選択します。
-1. **[追加のタスク]** ページで、**[同期オプションのカスタマイズ]** を選択します。
-1. **[Azure AD への接続]** ページで、演習 1 で作成した Azure AD グローバル管理者ユーザー アカウントのユーザー名とパスワードを入力します。
-1. **[オプション機能]** ページで、**[パスワード ライトバック]** を選択します。
+   ![AZ-800_Lab2_47](./media/AZ-800_Lab2_47.png)
 
-   > **注**: Active Directory ユーザーのセルフサービス パスワード リセットには、パスワード ライトバックが必要です。 これにより、Azure AD 内のユーザーによってパスワードが変更され、Active Directory に同期されます。
+1.  **[すべての製品]** ページで、 **[ + 試用/購入]** を選択します。
 
-1. **[構成の準備完了]** ページで、実行するアクションの一覧を確認し、**[構成]** を選択します。
-1. 構成が完了したら、**[Microsoft Azure Active Directory Connect]** ウィンドウを閉じます。
+   ![AZ-800_Lab2_48](./media/AZ-800_Lab2_48.png)
+
+1.  **[アクティブ化]** ページの **[ AZURE AD PREMIUM P2 ]** で、 **[無料試用版]** を選択し、 **[アクティブ化]** をクリックします。 
+
+   ![AZ-800_Lab2_49](./media/AZ-800_Lab2_49.png)
+
+1. ブラウザを更新し、**[Azure Active Directory Premium P2]** を選択します。
+
+   ![AZ-800_Lab2_50](./media/AZ-800_Lab2_50.png)
+
+1.  **[Azure Active Directory Premium P2 | ライセンス]** ユーザーページで、 **[ + 割り当て]** を選択します。
+
+   ![AZ-800_Lab2_51](./media/AZ-800_Lab2_51.png)
+
+1.  **[ライセンスの割り当て]** ページで、 **[ + ユーザーとグループの追加]** を選択します。
+
+   ![AZ-800_Lab2_52](./media/AZ-800_Lab2_52.png)
+
+1.  **[ユーザーとグループの追加]** ページで、**admin**を検索し、結果の一覧から **Mod Administrator** を選択してた後、  **[選択]** をクリックします。
+
+   ![AZ-800_Lab2_53](./media/AZ-800_Lab2_53.png)
+
+1. **[ライセンスの割り当て]** ページに戻り、 Mod Administrator が選択されていることを確認したら、 **[レビューと割り当て]** をクリックします。
+
+   <img src="./media/AZ-800_Lab2_54.png" alt="AZ-800_Lab2_54" style="zoom: 67%;" />
+
+1. **[ライセンスの割り当て]** ページに戻り、 **[割り当て]** をクリックします。
+
+1. **Azure Active Directory** ページに戻り、左のナビゲーションペイン一覧から、 **[パスワードのリセット]** を選択します。
+
+   ![AZ-800_Lab2_55](./media/AZ-800_Lab2_55.png)
+
+1. **[パスワードのリセット]** ページで、 **[パスワードリセットのセルフパスワードが有効]** の横にある **[!]** マークをクリックし、 メッセージを確認します。※メッセージには、構成を適用するユーザーの範囲を選択できる旨の説明が記載されています。
+
+    ![AZ-800_Lab2_56](./media/AZ-800_Lab2_56.png)
+
+    > **注**: パスワード リセット機能は、有効にしないでください。
+
+1. パスワードリセットのセルフサービスは **[なし]** の状態で、タスク2に進みます。
+
+### <a name="task-2-enable-password-writeback-in-azure-ad-connect"></a>タスク 2: Azure AD Connect でパスワード ライトバックを有効にする
+
+1. **SEA-ADM1** で、[スタート] メニューから、 **Azure AD Connect** を展開し、**[Azure AD Connect]** を起動します。
+
+   <img src="./media/AZ-800_Lab2_57.png" alt="AZ-800_Lab2_57" style="zoom:67%;" />
+
+1.  **[Microsoft Azure Active Directory Connect]** ウィンドウで、**[Configure (構成)]** をクリックします。
+
+   <img src="./media/AZ-800_Lab2_58.png" alt="AZ-800_Lab2_58" style="zoom:67%;" />
+
+1.  **[Additional tasks (追加のタスク)]** 画面で、**[Customize synchronization options (同期オプションのカスタマイズ)]** を選択し、 **[Next (次へ)]** をクリックします。
+
+   <img src="./media/AZ-800_Lab2_59.png" alt="AZ-800_Lab2_59" style="zoom:67%;" />
+
+1.  **[Connect to Azure AD (Azure AD への接続)]** 画面で、Azure AD グローバル管理者ユーザー アカウントのユーザー名とパスワードを入力し、 **[Next (次へ)]** をクリックします。※資格情報は、ラボの [Home] タブで提供されているアカウントを使用してください。
+
+   <img src="./media/AZ-800_Lab2_60.png" alt="AZ-800_Lab2_60" style="zoom:67%;" />
+
+   
+
+1.  **[Connect your directories]** 画面では、規定値のまま **[Next (次へ)]** をクリックします。
+
+1. **[Domain and OU filtering]** 画面では、規定値のまま **[Next (次へ)]** をクリックします。
+
+1. **[Optional features (オプション機能)]** 画面で、**[Password writeback (パスワード ライトバック)]** にチェックを入れ、 [Next (次へ)] をクリックします。
+
+   <img src="./media/AZ-800_Lab2_61.png" alt="AZ-800_Lab2_61" style="zoom:67%;" />
+
+   > **注**: **Active Directory ユーザーのセルフサービス パスワード リセットには、パスワード ライトバックが必要です。 パスワードライトバックによって、Azure AD 内のユーザーによってパスワードが変更され、Active Directory に同期されます。**
+
+1. **[Ready to configure (構成の準備完了)]** 画面が表示されたら、**[Configure (構成)]** をクリックします。
+
+   ※構成が完了するまでに数分かかります。
+
+1. 構成が完了したら、 **[Exit]** をクリックし、 **[Microsoft Azure Active Directory Connect]** ウィンドウを閉じます。
 
 #### <a name="task-3-enable-pass-through-authentication-in-azure-ad-connect"></a>タスク 3: Azure AD Connect でパススルー認証を有効にする
 
