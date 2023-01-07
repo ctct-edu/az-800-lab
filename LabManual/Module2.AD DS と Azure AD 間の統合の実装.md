@@ -279,47 +279,89 @@ Azure AD Connect をインストールして構成したので、同期のメカ
 1. Azure AD に対する変更を同期する。
 1. Azure AD での変更を検証する。
 
-#### <a name="task-1-verify-synchronization-in-the-azure-portal"></a>タスク 1: Azure portal で同期を検証する
+### <a name="task-1-verify-synchronization-in-the-azure-portal"></a>タスク 1: Azure portal で同期を検証する
 
 1. **SEA-ADM1** で、Azure portal が表示されている Microsoft Edge ウィンドウに切り替えます。 
-1. **Azure AD Connect** ページを更新し、**[Active Directory からのプロビジョニング]** の下の情報を確認します。
-1. **[Azure Active Directory]** ページから **[ユーザー]** ページを参照します。
-1. Active Directory から同期されたユーザーの一覧を確認します。
 
-   > **注**: ディレクトリ同期が開始されると、Active Directory オブジェクトが Azure AD ポータルに表示されるまでに 15 分かかることがあります。
+1. **Azure AD Connect** ページを更新し、**[Active Directory からのプロビジョニング]** の下の情報の **[同期状態]** が **[有効]** となっていることを確認します。※有効が確認できない場合は、ブラウザ更新を実行してください。
 
-1. **[ユーザー]** ページで、**[グループ]** ページを参照します。
-1. Active Directory から同期されたグループの一覧を確認します。
+   ![AZ-800_Lab2_32](./media/AZ-800_Lab2_32.png)
 
-#### <a name="task-2-verify-synchronization-in-the-synchronization-service-manager"></a>タスク 2: Synchronization Service Manager で同期を検証する
+1. 左のナビゲーションペインから **[ユーザー]** を選択します。
 
-1. **SEA-ADM1** の **[スタート]** メニューで、**[Azure AD Connect]** を展開し、**[同期サービス]** を選択します。
-1. **[Synchronization Service Manager]** ウィンドウの **[操作]** タブで、Active Directory オブジェクトを同期するために実行されたタスクを確認します。
-1. **[コネクタ]** タブを選択し、2 つのコネクタに注目します。
+   ![AZ-800_Lab2_33](./media/AZ-800_Lab2_33.png)
 
-   > **注**: 1 つのコネクタが AD DS 用であり、もう 1 つは Azure AD テナント用です。 
+1. Active Directory の Contoso.com ドメインから同期されたユーザーの一覧が表示されます。
 
-1. **[Synchronization Service Manager]** ウィンドウを閉じます。
+   > **注**: ディレクトリ同期が開始されると、Active Directory オブジェクトが Azure AD Portalに表示されるまでに 15 分以上要する場合があります。
 
-#### <a name="task-3-update-a-user-account-in-active-directory"></a>タスク 3: Active Directory でユーザー アカウントを更新する
+1. Azure Active Directory に戻り、左ナビゲーションペインの一覧から**[グループ]** を参照します。
 
-1. **SEA-ADM1** の **[サーバー マネージャー]** で **Active Directory ユーザーとコンピューター**を開きます。
-1. **[Active Directory ユーザーとコンピューター]** で、**Sales** 組織単位 (OU) を展開し、**Sumesh Rajan** のプロパティを開きます。
-1. ユーザーのプロパティで、 **[組織]** タブを選択します。
-1. **[役職]** テキストボックスに「**マネージャー**」と入力し、**[OK]** を選択します。
+   ![AZ-800_Lab2_34](./media/AZ-800_Lab2_34.png)
 
-#### <a name="task-4-create-a-user-account-in-active-directory"></a>タスク 4: Active Directory でユーザー アカウントを作成する
+1. Active Directory の Contoso.com ドメインから同期されたグループの一覧を確認します。
 
-- **Sales** OU で次のユーザー を作成します。
-   - 名: **Jordan**
-   - 姓: **Mitchell**
-   - ユーザーログオン名: **Jordan**
-   - パスワード: **Pa55w.rd**
+   注: オンプレミスドメインの OU が、Azure AD のグループとして同期されていることが確認できます。(例 : Sales OU、Research OU などがセキュリティグループとして同期されています。)
 
-#### <a name="task-5-sync-changes-to-azure-ad"></a>タスク 5: Azure AD に対する変更を同期する
+### <a name="task-2-verify-synchronization-in-the-synchronization-service-manager"></a>タスク 2: Synchronization Service Manager で同期を検証する
+
+1. **SEA-ADM1** の **[スタート]** メニューで、**[Azure AD Connect]** を展開し、**[Synchronization Service (同期サービス)]** を選択します。
+
+   ![AZ-800_Lab2_35](./media/AZ-800_Lab2_35.png)
+
+1. **[Synchronization Service Manager]** ウィンドウの **[Operations (操作)]** タブで、Active Directory オブジェクトを同期するために実行されたタスクが確認できます。
+
+   ![AZ-800_Lab2_36](./media/AZ-800_Lab2_36.png)
+
+1. **[Connectors (コネクタ)]** タブを選択し、2 つのコネクタが存在することを確認します。
+
+   ![AZ-800_Lab2_37](./media/AZ-800_Lab2_37.png)
+
+   > **注**: 1 つのコネクタが AD DS 用で、もう 1 つは Azure AD テナント用です。 
+
+1. コネクタを確認したら、 **[Synchronization Service Manager]** ウィンドウを閉じます。
+
+### <a name="task-3-update-a-user-account-in-active-directory"></a>タスク 3: Active Directory でユーザー アカウントを更新する
+
+1. **SEA-ADM1** の **[Server Manager (サーバー マネージャー)]** で  **[Active Directory Users and Computers (Active Directory ユーザーとコンピューター)]** を起動します。
+
+1. **[Active Directory ユーザーとコンピューター]** で、**Sales** 組織単位 (OU) を展開し、ユーザーの **Ben Miller** をダブルクリック、もしくは右クリックをしてプロパティを表示させます。
+
+   ![AZ-800_Lab2_38](./media/AZ-800_Lab2_38.png)
+
+1. ユーザーのプロパティで、 **[Organization (組織)]** タブを選択します。
+
+1. **[Job Title (役職)]** テキストボックスに「**Manager**」と入力し、**[OK]** をクリックします。
+
+   ![AZ-800_Lab2_39](./media/AZ-800_Lab2_39.png)
+
+### <a name="task-4-create-a-user-account-in-active-directory"></a>タスク 4: Active Directory でユーザー アカウントを作成する
+
+1.   **SEA-ADM1** の **[Server Manager (サーバー マネージャー)]** で  **[Active Directory Users and Computers (Active Directory ユーザーとコンピューター)]** を起動します。
+
+2.  Sales OU を右クリックして、 **[New] - [User]** の順に選択します。
+
+   ![AZ-800_Lab2_40](./media/AZ-800_Lab2_40.png)
+
+3. [New Object - User] ダイアログボックスに以下を入力して、 **[Next]** をクリックします。
+
+   | First name          | Jordan       |
+   | ------------------- | ------------ |
+   | **Last name**       | **Mitchell** |
+   | **User logon name** | **Jordan**   |
+
+   ![AZ-800_Lab2_41](./media/AZ-800_Lab2_41.png)
+
+4. パスワードを **Pa55w.rd** と設定して **[Next]** をクリックします。
+
+   ![AZ-800_Lab2_42](./media/AZ-800_Lab2_42.png)
+
+5. 作成したら、 **[Finish]** をクリックしてダイアログボックスを閉じます。
+
+### <a name="task-5-sync-changes-to-azure-ad"></a>タスク 5: Azure AD に対する変更を同期する
 
 1. **SEA-ADM1** で、管理者として **Windows PowerShell** を起動します。
-1. **Windows PowerShell** コンソールで、次のコマンドを実行して同期をトリガーします。
+1. **Windows PowerShell** コンソールで、次のコマンドレットを実行し、Contoso.com ドメインで変更したユーザー情報や作成したユーザーアカウントを同期します。
 
    ```powershell
    Start-ADSyncSyncCycle
@@ -327,21 +369,35 @@ Azure AD Connect をインストールして構成したので、同期のメカ
 
    > **注**: 同期サイクルの開始後、Active Directory オブジェクトが Azure AD ポータルに表示されるまでに 15 分かかることがあります。
 
-#### <a name="task-6-verify-changes-in-azure-ad"></a>タスク 6: Azure AD での変更を検証する
+3. 実行結果に [Success] と返ってきたら、Windows PowerShell コンソールを × で閉じて終了します。
+
+### <a name="task-6-verify-changes-in-azure-ad"></a>タスク 6: Azure AD での変更を検証する
 
 1. **SEA-ADM1** で、Microsoft Edge ウィンドウに切り替えて Azure portal を表示し、**[Azure Active Directory]** ページに戻ります。
+
 1. **[Azure Active Directory]** ページから **[ユーザー]** ページを参照します。
-1. **[すべてのユーザー]** ページで、ユーザー **Sumesh** を検索します。
-1. ユーザー **Sumesh Rajan** のプロパティ ページを開き、**役職**の属性が Active Directory から同期されたことを確認します。
+
+1. **[すべてのユーザー]** ページで、ユーザー **Ben Miller** を検索します。
+
+   ![AZ-800_Lab2_43](./media/AZ-800_Lab2_43.png)
+
+1. ユーザー **Ben Miller** のプロパティ ページを開き、**役職**の属性が Active Directory から同期されたことを確認します。※Ben Miller の役職 [Manager] が同期されます。
+
+   ![AZ-800_Lab2_44](./media/AZ-800_Lab2_44.png)
+
 1. Microsoft Edge で、 **[すべてのユーザー]** ページに戻ります。
+
 1. **[すべてのユーザー]** ページで、ユーザーを **Jordan** 検索します。
-1. ユーザー **Jordan Mitchell** の [プロパティ] ページを開き、Active Directory から同期されたユーザー アカウントの属性を確認します。
+
+   ![AZ-800_Lab2_45](./media/AZ-800_Lab2_45.png)
+
+1. Active Directory で作成した、Jordan Mitchell が同期されていることが確認できます。
 
 ## <a name="exercise-5-implementing-azure-ad-integration-features-in-ad-ds"></a>演習 5 AD DS での Azure AD 統合機能の実装
 
 ### <a name="scenario"></a>シナリオ
 
-あなたは、オンプレミスの Azure Active Directory のセキュリティをさらに強化し、管理オーバーヘッドを最小限に抑えることができる Azure AD 統合機能を特定する必要があると考えています。 また、Windows Server Active Directory 用の Azure AD パスワード保護と、パスワード ライトバックを使用するセルフサービス パスワード リセットを実装することも希望しています。
+オンプレミスの Azure Active Directory のセキュリティをさらに強化し、管理オーバーヘッドを最小限に抑えることができる Azure AD 統合機能を特定する必要があります。 また、Windows Server Active Directory 用の Azure AD パスワード保護と、パスワード ライトバックを使用するセルフサービス パスワード リセットを実装することも希望しています。
 
 この演習の主なタスクは次のとおりです。
 
