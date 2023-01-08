@@ -110,11 +110,14 @@ Contoso, Ltd. は、自社の環境に新しいサーバーを複数新規に実
    
 
    - Username (ユーザー名) : **Contoso\Administrator**
+
    - Password (パスワード) :  **Pa55w.rd**
 
-   <img src="./media/AZ-800_Lab3_05.png" alt="AZ-800_Lab3_05" style="zoom:80%;" />
+     
 
-1.  [すべての接続] ページに戻り、**sea-dc1.contoso.com**  が Windows Admin Center に追加されたことを確認します。
+   <img src="./media/AZ-800_Lab3_05.png" alt="AZ-800_Lab3_05" style="zoom: 50%;" />
+
+1.   **[すべての接続]** ページに戻り、**sea-dc1.contoso.com**  が Windows Admin Center に追加されたことを確認します。
 
    ![AZ-800_Lab3_06](./media/AZ-800_Lab3_06.png)
 
