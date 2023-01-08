@@ -692,51 +692,70 @@ Azure AD Connect をインストールして構成したので、同期のメカ
 1. Azure AD Connect をアンインストールする。
 1. Azure でディレクトリ同期を無効にする。
 
-#### <a name="task-1-uninstall-azure-ad-connect"></a>タスク 1 Azure AD Connect のアンインストール
+### <a name="task-1-uninstall-azure-ad-connect"></a>タスク 1 Azure AD Connect のアンインストール
 
-1. **SEA-ADM1** の検索ボックスで、 **[Control Panel]** を検索し、検索結果に表示された **[Control Panel]** を選択します。
+1. **SEA-ADM1** のスタートメニュー横の検索ボックスで、 **[Control Panel (コントロールパネル)]** を検索し、検索結果に表示された **[Control Panel]** を選択します。
 
-1. **[Programs]** の **[Uninstall a program]** を選択します。
+1. **[Programs (プログラム)]** の **[Uninstall a program(プログラムのアンインストール)]** を選択します。
 
    <img src="./media/AZ-800_Lab2_78.png" alt="AZ-800_Lab2_78" style="zoom:80%;" />
 
-1. **Uninstall or change a program** の一覧から、**[Microsoft Azure AD Connect]** を右クリックし、アンインストールをクリックします。
+1.  **[Uninstall or change a program(プログラムのアンインストールまたは変更)]**  の一覧から、**[Microsoft Azure AD Connect]** を右クリックし、アンインストールをクリックします。
 
    <img src="./media/AZ-800_Lab2_79.png" alt="AZ-800_Lab2_79" style="zoom:80%;" />
 
-4.  **[Programs and features]** ダイアログボックスで確認メッセージが表示されたら、 **[Yes]** をクリックします。
+4.  **[Programs and features (プログラムと機能)]** ダイアログボックスで確認メッセージが表示されたら、 **[Yes]** をクリックします。
 
    ![AZ-800_Lab2_80](./media/AZ-800_Lab2_80.png)
 
-5.  **[Uninstall Azure AD Connect]** ウィンドウで、 **[Remove]** を選択します。
+5.  **[Uninstall Azure AD Connect (プログラムと機能)]** ウィンドウで、 **[Remove (削除)]** を選択します。
 
    ※アンインストールが完了するまでに数分要します。
 
-6. Azure AD Connect がアンインストールされたら、 **[Uninstall Azure AD Connect]**  ウィンドウで  **[Exit]** を選択します。
+6.  **Azure AD Connect**  がアンインストールされたら、 **[Exit (終了)]** をクリックします。
 
 ### <a name="task-2-disable-directory-synchronization-in-azure"></a>タスク 2: Azure でディレクトリ同期を無効にする
 
 1. **SEA-ADM1** で、**Windows PowerShell** ウィンドウに切り替えます。
-1. **Windows PowerShell** コンソールで、次のコマンドを実行し、Azure AD 用の Microsoft Online モジュールをインストールします。
+
+1. **Windows PowerShell** コンソールで、次のコマンドレットを実行し、Azure AD 用の Microsoft Online モジュールをインストールします。
 
    ```powershell
    Install-Module -Name MSOnline
    ```
-1. 次のコマンドを実行して、資格情報を Azure に提供します。
+
+   ※プロンプトにNuGet プロバイダーをインストールするメッセージが表示されたら、 **[Y]** と入力し、Enter キーを押します。
+
+   ![AZ-800_Lab2_81](./media/AZ-800_Lab2_81.png)
+
+   ※信頼されていないリポジトリからモジュールをインストールするように求められたら、Aと入力し、Enter キーを押します。
+
+   ![AZ-800_Lab2_82](./media/AZ-800_Lab2_82.png)
+
+   
+
+1. 次のコマンドレットを実行して、資格情報を Azure に提供します。
 
    ```powershell
-   $msolcred=Get-Credential
+   $msolCred = Get-Credential
    ```
-1. ダイアログが表示されたら、**[Windows PowerShell 資格情報要求]** ダイアログ ボックスで、演習 1 で作成したユーザー アカウントの資格情報を入力します。
-1. 次のコマンドを実行して Azure に接続します。
+
+1.  **[Windows PowerShell 資格情報要求]** ダイアログ ボックスで、Azure AD グローバル管理者ユーザー アカウントの資格情報を入力します。(資格情報は、ラボの [Home] タブに記載の情報を使用してください。)
+
+1. 次のコマンドレットを実行して Azure に接続します。
 
    ```powershell
    Connect-MsolService -Credential $msolcred
    ```
-1. 次のコマンドを実行して、Azure でディレクトリ同期を無効にします。
+
+1. 次のコマンドレットを実行して、Azure でディレクトリ同期を無効にします。
 
    ```powershell
    Set-MsolDirSyncEnabled -EnableDirSync $false
    ```
 
-### 
+7. 確認を求めるプロンプトが表示されたら、 **[Y]** と入力し、Enter キーを押下します。
+
+   ![AZ-800_Lab2_83](./media/AZ-800_Lab2_83.png)
+
+※ 以上で演習は終了です。お疲れさまでした。
