@@ -167,6 +167,8 @@ Contoso, Ltd. は、自社の環境に新しいサーバーを複数新規に実
 1. **Contoso.com** ゾーンを選択し、**SEA-DC1** で構成済みの DNS レコードの一覧を確認します。
 
    ![AZ-800_Lab3_13](./media/AZ-800_Lab3_13.png)
+   
+   
 
 ### <a name="task-4-verify-remote-administration"></a>タスク 4: リモート管理を確認する
 
