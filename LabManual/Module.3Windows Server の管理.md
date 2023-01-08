@@ -78,22 +78,21 @@ Contoso, Ltd. は、自社の環境に新しいサーバーを複数新規に実
 
    ※**「Successfully updated your extentions」** というポップアップメッセージが表示される場合がありますが、 **[OK]** をクリックして構いません。
 
-   <img src="./media/AZ-800_Lab3_01.png" alt="AZ-800_Lab3_01" style="zoom: 50%;" />
+   <img src="./media/AZ-800_Lab3_01.png" alt="AZ-800_Lab3_01" style="zoom: 33%;" />
 
    1. ```
       ※必要に応じ、以下の手順を実行し、Windows Admin Center の表示を日本語へ変更することができます。
       
-      1. **Windows Admin Center** の右上にある **歯車マーク(Settings)** をクリックします。
+      1. Windows Admin Center の右上にある **歯車マーク(Settings) をクリックします。
       
-      2. Settings ページの左ナビゲーションペイン一覧から、 **[Language / Region]** を選択します。
+      2. Settings ページの左ナビゲーションペイン一覧から、 [Language / Region] を選択します。
       
       3.  [Language] のプルダウンから [日本語] を選択し、 [Save and reload] をクリックします。 
       
-         ![AZ-800_Lab3_03](./media/AZ-800_Lab3_03.png)
       ```
-
       
-
+      
+   
 1. **[すべての接続]** ページを確認し、**sea-adm1.contoso.com**  が含まれていることを確認します。
 
    ![AZ-800_Lab3_02](./media/AZ-800_Lab3_02.png)
