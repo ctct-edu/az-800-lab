@@ -83,7 +83,7 @@ Contoso, Ltd. は、自社の環境に新しいサーバーを複数新規に実
    1. ```
       ※必要に応じ、以下の手順を実行し、Windows Admin Center の表示を日本語へ変更することができます。
       
-      1. Windows Admin Center の右上にある **歯車マーク(Settings) をクリックします。
+      1. Windows Admin Center の右上にある 歯車マーク(Settings) をクリックします。
       
       2. Settings ページの左ナビゲーションペイン一覧から、 [Language / Region] を選択します。
       
