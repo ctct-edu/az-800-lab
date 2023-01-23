@@ -228,7 +228,7 @@ lab:
 
 3. 左ナビゲーションペインを下にスクロールし、 **[実行コマンド]** をクリックします。
 
-4.  **[RunPowerShellScript]** を選択し、ブロンプロが表示させたら、以下のPowerShellコマンドレットを実行します。
+4.  **[RunPowerShellScript]** を選択し、プロンプトが表示させたら、以下のPowerShellコマンドレットを実行します。
 
    ```powershell
    Test-NetConnection -ComputerName 10.81.0.4 -Port 3389 -InformationLevel 'Detailed'
