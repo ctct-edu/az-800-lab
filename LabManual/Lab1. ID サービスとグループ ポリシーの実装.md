@@ -1,6 +1,6 @@
-# <a name="lab-answer-key-implementing-identity-services-and-group-policy"></a>Lab01: ID サービスおよびグループ ポリシーの実装
+# <a name="lab-answer-key-implementing-identity-services-and-group-policy"></a>Lab01: ID サービスとグループポリシーの実装
 
-### **<a name="scenario"></a>シナリオ**
+## <a name="scenario"></a>シナリオ
 
 あなたは Contoso Ltd. に管理者として勤務しています。この会社は、いくつかの新しい場所でビジネスを拡大しています。 現在、Active Directory Domain Services (AD DS) 管理チームは、非対話型のリモート ドメイン コントローラーの展開のために Windows Server で使用できる方法を評価しています。 また、チームは特定の AD DS 管理タスクを自動化する方法を探しています。 さらに、チームは、グループ ポリシー オブジェクト (GPO) に基づいて構成管理を確立したいと考えています。
 
@@ -11,11 +11,29 @@
 - Server Core に新しいドメイン コントローラーを展開する。
 - グループ ポリシーを構成する。
 
-## <a name="estimated-time-45-minutes"></a>予想所要時間: 45 分
+## <a name="estimated-time-45-minutes"></a>予想所要時間: 60 分
 
+## <a name="architecture"></a>アーキテクチャの図
 
+![AZ-800_Lab01_architecture1](./media/AZ-800_Lab01_architecture1.png)
+
+## <a name="lab-setup"></a>ラボのセットアップ
+
+使用する仮想マシン: **SEA-DC1**、**SEA-SVR1**、**SEA-ADM1**  
+
+1.  **SEA-ADM1** を選択します。
+2. 次の資格情報を使用してサインインします。
+   - ユーザー名: **Administrator**
+   - パスワード: **Pa55w.rd**
+   - ドメイン: **CONTOSO**
 
 ## <a name="exercise-1-deploying-a-new-domain-controller-on-server-core"></a>演習 1: Server Core への新しいドメイン コントローラーの展開
+
+この演習の主なタスクは次のとおりです。
+
+1. Server Core に AD DS を展開する
+2. AD DS インストールの準備をして、リモート サーバーを昇格させる
+3. AD DS でオブジェクトを管理する
 
 ### <a name="task-1-deploy-ad-ds-on-a-new-windows-server-core-server"></a>タスク 1: Server Core に AD DS を展開する
 
@@ -54,7 +72,7 @@
 
 ### <a name="task-2-prepare-the-ad-ds-installation-and-promote-a-remote-server"></a>タスク 2: AD DS インストールの準備をして、リモート サーバーを昇格させる
 
-1. **SEA-ADM1** の **[スタート]** メニューから[Server Manager] を選択して起動させます。起動後、左ペインから **[All Servers(すべてのサーバー)]** を選択します。
+1.  **SEA-ADM1** の **[スタート]** メニューから **[Server Manager]** を選択して起動させます。起動後、左ペインから **[All Servers(すべてのサーバー)]** を選択します。
 
    <img src="./media/AZ-800_Lab1_03.png" alt="AZ-800_Lab1_03" style="zoom:80%;" />
 
@@ -82,11 +100,11 @@
 
 ![AZ-800_Lab1_08](./media/AZ-800_Lab1_08.png)
 
-> **注**: **SEA-SVR1**にAD DSの役割をインストールしただけではドメインコントローラーにならないため、昇格させる必要があります。
+> **注: SEA-SVR1にAD DSの役割をインストールしただけではドメインコントローラーにならないため、昇格させる必要があります。**
 
 **※通知フラグに[Refresh failed]エラーが表示される場合がありますが、ラボと直接関係のないエラーのため無視して構いません。**
 
-   7.**[Active Directory Domain Services Configuration ウィザード]** の **[Deployment Configuration(展開構成)]** ページの **[Select the deployment operation (展開操作の選択)]**  の下で、**[Add a domain controller to an existing domain(既存のドメインにドメイン コントローラーを追加する)]** が選択されていることを確認します。
+7. **[Active Directory Domain Services Configuration ウィザード]** の **[Deployment Configuration(展開構成)]** ページの **[Select the deployment operation (展開操作の選択)]**  の下で、**[Add a domain controller to an existing domain(既存のドメインにドメイン コントローラーを追加する)]** が選択されていることを確認します。
 
 ![AZ-800_Lab1_09](./media/AZ-800_Lab1_09.png)
 
@@ -105,7 +123,7 @@
 
 10. 資格情報が変更されたことを確認し、**[Next (次へ)]** をクリックします。
 
-11. **[Domain Controller Options]** ページで、**[Domain Name System (DNS) server]** と **[Global Catalog (GC)]** チェックボックスがオンになっていることを確認します。 **[読み取り専用ドメイン コントローラー (RODC)]** チェック ボックスがオフで構いません。
+11.  **[Domain Controller Options]** ページで、**[Domain Name System (DNS) server]** と **[Global Catalog (GC)]** チェックボックスがオンになっていることを確認します。 **[読み取り専用ドメイン コントローラー (RODC)]** チェック ボックスはオフで構いません。
 
 12. **[Type the Directory Services Restore Mode (DSRM) password (ディレクトリ サービス復元モード (DSRM) パスワードの入力)]** セクションで、以下のパスワードを入力し、**[次へ]** をクリックします。
 
@@ -119,23 +137,23 @@
 
 13. **[DNS Options]** ページでは規定値のまま、**[Next (次へ)]** をクリックします。
 
-※ページ内に、DNSゾーンの委任に関する警告メッセージが表示されますが、このラボではDNSゾーンの委任は行わないため無視して構いません。
+**※ページ内に、DNSゾーンの委任に関する警告メッセージが表示されますが、このラボではDNSゾーンの委任は行わないため無視して構いません。**
 
-14. **[Additional Options (追加オプション)]** ページで、規定値のまま **[Next (次へ)]**  をクリックします。
+14.  **[Additional Options (追加オプション)]**  ページで、規定値のまま **[Next (次へ)]**  をクリックします。
 
-※IFMオプションはチェックを外したままで構いません。
+**※IFMオプションはチェックを外したままで構いません。**
 
-15. **[Paths (パス)]** ページでは、既定のパスのまま、**[Next (次へ)]** をクリックします。
+15.  **[Paths (パス)]** ページでは、既定のパスのまま、**[Next (次へ)]** をクリックします。
 
-16. **[Review Options (オプションの確認)]**ページでは、**[Next (次へ)]** をクリックします。
+16.  **[Review Options (オプションの確認)]**ページでは、**[Next (次へ)]** をクリックします。
 
-17.  **[Prerequisites Check (前提条件のチェック)]** ページで、緑のチェックが表示されたことを確認したら **[Install (インストール)]** をクリックします。
+17.   **[Prerequisites Check (前提条件のチェック)]** ページで、緑のチェックが表示されたことを確認したら **[Install (インストール)]** をクリックします。
 
  **[This server was successfully configured as a domain contoroller]** のメッセージが表示されたら、 **[Close (閉じる)]** をクリックします。
 
-18. **SEA-ADM1** で **[Server Manager]** に切り替え、右上の更新ボタンをクリックします。その後、通知メッセージを確認し **[ Promote this server to a domain controller (このサーバーをドメイン コントローラーに昇格する)]**  が表示されなくなっていることを確認します。
+18.  **SEA-ADM1** で **[Server Manager]** に切り替え、右上の更新ボタンをクリックします。その後、通知メッセージを確認し **[ Promote this server to a domain controller (このサーバーをドメイン コントローラーに昇格する)]**  が表示されなくなっていることを確認します。
 
-> **注**:SEA-SVR1の再起動が完了するまでに何度か **[更新]** を繰り返す必要がある場合があります。
+> **注:SEA-SVR1の再起動が完了するまでに何度か [更新] を繰り返す必要がある場合があります。**
 
 ![AZ-800_Lab1_12](./media/AZ-800_Lab1_12.png)
 
@@ -157,7 +175,7 @@
    New-ADUser -Name Ty -DisplayName 'Ty Carlson' -GivenName Ty -Surname Carlson -Path 'OU=Seattle,DC=contoso,DC=com'
    ```
 
-1. Ty のユーザー アカウントのパスワードを設定するには、次のコマンド実行します。
+1. Ty のユーザー アカウントのパスワードを設定するには、次のコマンドレットを実行します。
 
    ```powershell
    Set-ADAccountPassword Ty
@@ -165,7 +183,7 @@
 
 1. 現在のパスワードの入力を求めるメッセージが表示されたら、何も入力せずにEnter キーを押します。
 
-   ※ユーザーTyの作成時にパスワード設定をせずに作成したため、現在のパスワードは設定されていません。
+   > **注 : ユーザーTyの作成時にパスワード設定をせずに作成したため、現在のパスワードは設定されていません。**
 
 1. 新たに設定するパスワードを求めるメッセージが表示されたら、「**Pa55w.rd**」と入力し、Enter キーを押します。
 
@@ -203,28 +221,46 @@
     Add-LocalGroupMember -Group 'Administrators' -Member 'CONTOSO\Ty'
     ```
 
-    > **注**:  **SEA-ADM1** はドメインコントローラーのため、標準ユーザーのTyはサインインできないためです。この次の演習で検証のためにサインインする必要があるため、管理者グループにユーザーを追加しました。
+    > **注:  SEA-ADM1 はドメインコントローラーのため、標準ユーザーのTyはサインインできないためです。この次の演習で検証のためにサインインする必要があるため、管理者グループにユーザーを追加しました。**
 
 #### **結果**: この演習が完了すると、AD DS に新しいドメイン コントローラーとマネージド オブジェクトが作成できています。
 
 ## **オプション : レプリケーションの検証** 
 
-1.  **SEA-ADM1** の **[スタート]** メニューから **[Server Manager]** を起動させます。
-2. [Tools]を展開し、**[Active Directory Users and Computers (Active Directory ユーザーとコンピューター)]** を選択します。
+1.   **SEA-ADM1** の **[スタート]** メニューから **[Server Manager]** を起動させます。
+2.  **[Tools]** を展開し、**[Active Directory Users and Computers (Active Directory ユーザーとコンピューター)]** を選択します。
 
 ![AZ-800_Lab1_14](./media/AZ-800_Lab1_14.png)
 
-3.  **Seattle OU**  配下に、 **SeattleBrunchUsers** グループとユーザー **Ty** が作成されていることが確認できます。
+3.   **Seattle OU**  配下に、 **SeattleBrunchUsers** グループとユーザー **Ty** が作成されていることが確認できます。
 
    ![AZ-800_Lab1_15](./media/AZ-800_Lab1_15.png)
 
-4.  **SeattleBrunchUsers** グループのプロパティを確認すると、ユーザー **Ty** がメンバーとして追加されていることが確認できます。
+4.   **SeattleBrunchUsers**  グループのプロパティを確認すると、ユーザー **Ty** がメンバーとして追加されていることが確認できます。
 
 ![AZ-800_Lab1_16](./media/AZ-800_Lab1_16.png)
 
 **注 : OUとグループは、リモートサーバーのドメインコントローラーにコマンドで作成しましたが、レプリケーション(複製)されるため、GUIでも確認ができます。** 
 
 ## <a name="exercise-2-configuring-group-policy"></a>演習 2: グループ ポリシーの構成
+
+この演習の主なタスクは次のとおりです。
+
+1. GPO を作成および編集する
+
+2. GPO をリンクする
+
+3. GPO の結果を検証する
+
+   ※余力がある方は、タスク3以降のオプションもチャレンジしてみてください。
+
+   
+
+## <a name="architecture"></a>アーキテクチャの図
+
+![AZ-800_Lab01_architecture2](./media/AZ-800_Lab01_architecture2.png)
+
+
 
 ### <a name="task-1-create-and-edit-a-gpo"></a>タスク 1: GPO を作成および編集する
 
