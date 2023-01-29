@@ -1,5 +1,20 @@
 # <a name="lab-answer-key-implementing-identity-services-and-group-policy"></a>Lab01: ID サービスおよびグループ ポリシーの実装
 
+### **<a name="scenario"></a>シナリオ**
+
+あなたは Contoso Ltd. に管理者として勤務しています。この会社は、いくつかの新しい場所でビジネスを拡大しています。 現在、Active Directory Domain Services (AD DS) 管理チームは、非対話型のリモート ドメイン コントローラーの展開のために Windows Server で使用できる方法を評価しています。 また、チームは特定の AD DS 管理タスクを自動化する方法を探しています。 さらに、チームは、グループ ポリシー オブジェクト (GPO) に基づいて構成管理を確立したいと考えています。
+
+### **<a name="objectives"></a>目標**
+
+このラボを完了すると、次のことができるようになります。
+
+- Server Core に新しいドメイン コントローラーを展開する。
+- グループ ポリシーを構成する。
+
+### <a name="estimated-time-45-minutes"></a>予想所要時間: 45 分
+
+
+
 ## <a name="exercise-1-deploying-a-new-domain-controller-on-server-core"></a>演習 1: Server Core への新しいドメイン コントローラーの展開
 
 ### <a name="task-1-deploy-ad-ds-on-a-new-windows-server-core-server"></a>タスク 1: Server Core に AD DS を展開する
