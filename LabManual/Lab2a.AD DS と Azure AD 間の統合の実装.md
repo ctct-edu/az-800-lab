@@ -4,17 +4,25 @@ lab:
   module: 'Module 2: Implementing Identity in Hybrid Scenarios'
 ---
 
-# <a name="lab-implementing-integration-between-ad-ds-and-azure-ad"></a>Lab2a: AD DS と Azure AD の統合の実装
+# <a name="lab-implementing-integration-between-ad-ds-and-azure-ad"></a>Lab2a: AD DS 統合のための Azure AD の準備
 
 ## <a name="scenario"></a>シナリオ
 
-Microsoft Azure Active Directory (Azure AD) を使用して Azure リソースへのアクセスを認証および承認したことで生じる管理と監視のオーバーヘッドについての懸念に対応するために、あなたは、オンプレミスの Active Directory Domain Services (AD DS) と Azure AD の間の統合をテストし、複数のユーザー アカウントの管理に、オンプレミスとクラウド リソースを組み合わせて使用することに関するビジネス上の懸念に対処できることを検証することにしました。
+Contoso の Azure AD 環境で、オンプレミスの AD DS と統合する準備ができている必要があります。 カスタムAzure AD ドメイン名とグローバル管理者ロールのあるアカウントを作成して検証します。
 
-## <a name="objectives"></a>目標
+
+
+## <a name="objectives"></a>目標とタスク
 
 このラボを完了すると、次のことができるようになります。
 
 - カスタム ドメインの追加や検証を含め、Azure AD とオンプレミス AD DS との統合の準備を行う
+
+この演習の主なタスクは次のとおりです。
+
+1. Azure でカスタム ドメイン名を作成する。
+1. グローバル管理者ロールを持つユーザーを作成する。
+1. グローバル管理者ロールを持つユーザーのパスワードを変更する。
 
 ## <a name="estimated-time-10-minutes"></a>予想所要時間: 10 分
 
@@ -34,17 +42,7 @@ Microsoft Azure Active Directory (Azure AD) を使用して Azure リソース�
 
 このラボでは、仮想マシンと Azure AD テナントを使用します。 
 
-## <a name="exercise-1-preparing-azure-ad-for-ad-ds-integration"></a>演習 1: AD DS 統合のための Azure AD の準備
 
-### <a name="scenario"></a>シナリオ
-
-ラボ内のAzure AD 環境で、オンプレミスの AD DS と統合する準備ができている必要があります。 カスタムAzure AD ドメイン名とグローバル管理者ロールのあるアカウントを作成して検証します。
-
-この演習の主なタスクは次のとおりです。
-
-1. Azure でカスタム ドメイン名を作成する。
-1. グローバル管理者ロールを持つユーザーを作成する。
-1. グローバル管理者ロールを持つユーザーのパスワードを変更する。
 
 ### <a name="task-1-create-a-custom-domain-name-in-azure"></a>タスク 1: Azure でカスタム ドメイン名を作成する。
 
