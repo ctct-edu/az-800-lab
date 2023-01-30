@@ -1,4 +1,4 @@
-# <a name="lab-answer-key-implementing-identity-services-and-group-policy"></a>Lab01: ID サービスとグループポリシーの実装
+# <a name="lab-answer-key-implementing-identity-services-and-group-policy"></a>Lab01: ID サービスの実装
 
 ## <a name="scenario"></a>シナリオ
 
