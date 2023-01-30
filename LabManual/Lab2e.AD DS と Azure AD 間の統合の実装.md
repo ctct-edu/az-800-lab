@@ -25,11 +25,11 @@ lab:
 5. Azure AD パスワード保護プロキシ サービスと DC エージェントをインストールして登録する。
 6. Azure でパスワード保護を有効にする。
 
-## <a name="estimated-time-60-minutes"></a>予想所要時間: 40 分
+## <a name="estimated-time-60-minutes"></a>予想所要時間: 50 分
 
 ## <a name="architecture"></a>アーキテクチャの図
 
-
+![AZ-800_Lab02_architecture5](./media/AZ-800_Lab02_architecture5.png)
 
 ## <a name="lab-setup"></a>ラボのセットアップ
 
@@ -192,7 +192,7 @@ lab:
 
 ### <a name="task-5-install-and-register-the-azure-ad-password-protection-proxy-service-and-dc-agent"></a>タスク 5: Azure AD パスワード保護プロキシ サービスと DC エージェントをインストールして登録する
 
-1. **SEA-ADM1** の Microsoft Edge で、Azure Portal とは別のタブを開き、Microsoft ダウンロード Web サイトを(https://www.microsoft.com/en-us/download/details.aspx?id=57071) を参照します。
+1. **SEA-ADM1** の Microsoft Edge で、Azure Portal とは別のタブを開き、Microsoft ダウンロード Web サイトを`https://www.microsoft.com/en-us/download/details.aspx?id=57071`を参照します。
 
 1. Microsoft ダウンロード Web サイトにある、「**Azure AD Password Protection for Windows Server Active Directory**」の、**[Download]** をクリックします。
 
@@ -202,7 +202,7 @@ lab:
 
    ![AZ-800_Lab2_72](./media/AZ-800_Lab2_72.png)
 
-   > **注**: プロキシ サービスは、ドメインコントローラー以外のサーバーにインストールすることが推奨されています。 また、プロキシ サービスは、Azure AD Connect エージェントと同じサーバーにはインストールできません。 このラボでは、プロキシ サービスは **SEA-SVR1** 、パスワード保護 DC エージェントは **SEA-DC1** にインストールします。
+   > **注: プロキシ サービスは、ドメインコントローラー以外のサーバーにインストールすることが推奨されています。 また、プロキシ サービスは、Azure AD Connect エージェントと同じサーバーにはインストールできません。 このラボでは、プロキシ サービスは SEA-SVR1 、パスワード保護 DC エージェントは SEA-DC1 にインストールします。**
 
 1. ブラウザに表示される、「Download multipul files (複数のファイルをダウンロード)」ダイアログボックスで [Allow (許可)] をクリックします。
 
