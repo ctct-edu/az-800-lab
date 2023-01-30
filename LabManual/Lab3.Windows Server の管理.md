@@ -133,7 +133,7 @@ Contoso, Ltd. は、自社の環境に新しいサーバーを複数新規に実
 
    ![AZ-800_Lab3_07](./media/AZ-800_Lab3_07.png)
 
-1. 利用可能な拡張機能の一覧から、**[Security (Preview)]**  の拡張機能を選択します。[インストール] をクリックすると、 Windows Admin Center が更新されます。
+1. 利用可能な拡張機能の一覧から、**[Security (Preview)]**  の拡張機能を選択します。 **[インストール]** をクリックすると、 Windows Admin Center が更新されます。
 
    ![AZ-800_Lab3_08](./media/AZ-800_Lab3_08.png)
 
