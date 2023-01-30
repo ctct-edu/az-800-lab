@@ -222,37 +222,43 @@ Contoso, Ltd. は、自社の環境に新しいサーバーを複数新規に実
 
 1. **SEA-ADM1** 上で、**Windows PowerShell** コンソールに切り替えます。
 
-1. **Windows PowerShell** コンソールで、次のコマンドレットを実行して、**SEA-DC1** への PowerShell リモート処理セッションを開始します。
+2. **Windows PowerShell** コンソールで、次のコマンドレットを実行して、**SEA-DC1** への PowerShell リモート処理セッションを開始します。
 
    ```powershell
    Enter-PSSession -ComputerName SEA-DC1
    ```
 
-1.  **[SEA-DC1]** プロンプトから次のコマンドレットを実行し、アプリケーション アイデンティティ サービス (AppIDSvc) のステータスを表示します。
+3. **[SEA-DC1]** プロンプトから次のコマンドレットを実行し、アプリケーション アイデンティティ サービス (AppIDSvc) のステータスを表示します。
 
    ```powershell
    Get-Service -Name AppIDSvc
    ```
 
+   
+
    ![AZ-800_Lab3_21](./media/AZ-800_Lab3_21.png)
 
-   > **注**: サービスが現在停止中であることを確認します。
+   > **注: サービスが現在停止中であることを確認します。**
 
-1. **[SEA-DC1]** プロンプトから、次のコマンドレットを実行して Application Identity サービスを開始します。
+4. **[SEA-DC1]** プロンプトから、次のコマンドレットを実行して Application Identity サービスを開始します。
 
    ```powershell
    Start-Service -Name AppIDSvc
    ```
 
-1. **[SEA-DC1]** プロンプトから、次のコマンドレットを実行して、アプリケーション ID サービス (AppIDSvc) の状態を表示します。
+   
+
+5. **[SEA-DC1]** プロンプトから、次のコマンドレットを実行して、アプリケーション ID サービス (AppIDSvc) の状態を表示します。
 
    ```powershell
    Get-Service -Name AppIDSvc
    ```
 
-   ![AZ-800_Lab3_22](./media/AZ-800_Lab3_22.png)
+   
 
-   > **注**: サービスが現在実行中に変更されたことを確認します。
+![AZ-800_Lab3_22](./media/AZ-800_Lab3_22.png)
+
+> **注: サービスが現在実行中に変更されたことを確認します。**
 
 6. **[SEA-DC1]** プロンプトから、次のコマンドレットを実行して、リモート処理セッションを終了します。
 
@@ -260,10 +266,12 @@ Contoso, Ltd. は、自社の環境に新しいサーバーを複数新規に実
    Exit-PSSession
    ```
 
+   
+
 ### <a name="results"></a>結果
 
 この演習を完了すると、Windows Admin Center がインストールされ、ラボ環境内のサーバーに接続されます。 機能のインストールや、リモート デスクトップ接続の有効化およびテストなどのリモート管理タスクを複数実行しました。 最後に、PowerShell リモート処理を使用してサービスの状態を確認し、開始しました。
 
 
 
-以上で、演習は終了です。お疲れさまでした。
+以上で演習は終了です。お疲れさまでした。
