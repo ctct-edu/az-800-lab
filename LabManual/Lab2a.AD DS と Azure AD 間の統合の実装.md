@@ -48,7 +48,7 @@ Microsoft Azure Active Directory (Azure AD) を使用して Azure リソース�
 
 ### <a name="task-1-create-a-custom-domain-name-in-azure"></a>タスク 1: Azure でカスタム ドメイン名を作成する。
 
-1. **SEA-ADM1** で Microsoft Edge を起動してから、Azure Portal ( https://portal.azure.com )に移動します。
+1. **SEA-ADM1** で Microsoft Edge を起動してから、Azure Portal `https://portal.azure.com`に移動します。
 
 1. ラボで提供されている資格情報を使用して、Azure portal にサインインします。
 
@@ -114,5 +114,4 @@ Microsoft Azure Active Directory (Azure AD) を使用して Azure リソース�
 > **注: 一般には、DNS レコードを使用してドメインを確認しますが、このラボでは検証済みドメインを使用しません。**
 
 **※カスタムドメインの確認まで出来たら、次の演習に進んでください。**
-
 
