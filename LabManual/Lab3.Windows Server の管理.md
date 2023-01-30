@@ -4,7 +4,7 @@ lab:
   module: 'Module 3: Windows Server administration'
 ---
 
-# <a name="lab-managing-windows-server"></a>ラボ: Windows Server の管理
+# <a name="lab-managing-windows-server"></a>Lab3: リモート サーバー管理の実装と使用
 
 ## <a name="scenario"></a>シナリオ
 
@@ -12,11 +12,25 @@ Contoso, Ltd. は、自社の環境に新しいサーバーを複数新規に実
 
 ​            
 
-## <a name="objectives"></a>目標
+## <a name="objectives"></a>目標とタスク
+
+このラボを完了すると、次のことができるようになります。
 
 - Windows Admin Center を実装および構成する
 
-## <a name="estimated-time-45-minutes"></a>予想所要時間: 45 分
+この演習の主なタスクは次のとおりです。
+
+1. Windows Admin Center をインストールする。
+1. リモート管理用のサーバーを追加する。
+1. Windows Admin Center 拡張機能を構成する。
+1. リモート管理を確認する。
+1. リモート PowerShell を使用してサーバーを管理する。
+
+## <a name="estimated-time-45-minutes"></a>予想所要時間: 40 分
+
+## <a name="architecture"></a>アーキテクチャの図
+
+
 
 ## <a name="lab-setup"></a>ラボのセットアップ
 
@@ -29,21 +43,9 @@ Contoso, Ltd. は、自社の環境に新しいサーバーを複数新規に実
    - パスワード: **Pa55w.rd**
    - ドメイン: **CONTOSO**
 
-このラボでは、使用可能な VM 環境と Azure AD テナントを使用 します。 Azure AD テナントへの認証情報は、ラボの **[Home]** タブで提供されているものを使用してください。
+このラボでは、仮想マシンと Azure AD テナントを使用 します。 Azure AD テナントへの認証情報は、ラボの **[Home]** タブで提供されているものを使用してください。
 
-## <a name="exercise-1-implementing-and-using-remote-server-administration"></a>演習 1: リモート サーバー管理の実装と使用
 
-### <a name="scenario"></a>シナリオ 
-
-組織は、 **Server Core (SEA-DC1)** サーバーを構成したので、リモート管理のために Windows Admin Center を実装する必要があります。
-
-この演習の主なタスクは次のとおりです。
-
-1. Windows Admin Center をインストールします。
-1. リモート管理用のサーバーを追加します。
-1. Windows Admin Center 拡張機能を構成します。
-1. リモート管理を確認します。
-1. リモート PowerShell を使用してサーバーを管理します。
 
 ### <a name="task-1-install-windows-admin-center"></a>タスク 1: Windows Admin Center をインストールする
 
@@ -80,19 +82,17 @@ Contoso, Ltd. は、自社の環境に新しいサーバーを複数新規に実
 
    <img src="./media/AZ-800_Lab3_01.png" alt="AZ-800_Lab3_01" style="zoom: 33%;" />
 
-   1. ```
-      ※必要に応じ、以下の手順を実行し、Windows Admin Center の表示を日本語へ変更することができます。
-      
-      1. Windows Admin Center の右上にある 歯車マーク(Settings) をクリックします。
-      
-      2. Settings ページの左ナビゲーションペイン一覧から、 [Language / Region] を選択します。
-      
-      3.  [Language] のプルダウンから [日本語] を選択し、 [Save and reload] をクリックします。 
-      
-      ```
-      
-      
-   
+
+> **※必要に応じ、以下の手順を実行し、Windows Admin Center の表示を日本語へ変更することができます。**
+>
+> 1. **Windows Admin Center の右上にある 歯車マーク(Settings) をクリックします。**
+>
+> 2. **Settings ページの左ナビゲーションペイン一覧から、 [Language / Region] を選択します。**
+>
+> 3.  **[Language] のプルダウンから [日本語] を選択し、 [Save and reload] をクリックします。** 
+
+
+
 1. **[すべての接続]** ページを確認し、**sea-adm1.contoso.com**  が含まれていることを確認します。
 
    ![AZ-800_Lab3_02](./media/AZ-800_Lab3_02.png)
