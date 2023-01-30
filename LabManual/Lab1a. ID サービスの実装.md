@@ -1,15 +1,21 @@
-# <a name="lab-answer-key-implementing-identity-services-and-group-policy"></a>Lab01: ID サービスの実装
+# <a name="lab-answer-key-implementing-identity-services-and-group-policy"></a>Lab01a: Server Core への新しいドメイン コントローラーの展開
 
 ## <a name="scenario"></a>シナリオ
 
 あなたは Contoso Ltd. に管理者として勤務しています。この会社は、いくつかの新しい場所でビジネスを拡大しています。 現在、Active Directory Domain Services (AD DS) 管理チームは、非対話型のリモート ドメイン コントローラーの展開のために Windows Server で使用できる方法を評価しています。 また、チームは特定の AD DS 管理タスクを自動化する方法を探しています。 さらに、チームは、グループ ポリシー オブジェクト (GPO) に基づいて構成管理を確立したいと考えています。
 
-## <a name="objectives"></a>目標
+## <a name="objectives"></a>目標とタスク
 
 このラボを完了すると、次のことができるようになります。
 
 - Server Core に新しいドメイン コントローラーを展開する。
 - グループ ポリシーを構成する。
+
+この演習の主なタスクは次のとおりです。
+
+1. Server Core に AD DS を展開する
+2. AD DS インストールの準備をして、リモート サーバーを昇格させる
+3. AD DS でオブジェクトを管理する
 
 ## <a name="estimated-time-45-minutes"></a>予想所要時間: 20 分
 
@@ -21,25 +27,22 @@
 
 使用する仮想マシン: **SEA-DC1**、**SEA-SVR1**、**SEA-ADM1**  
 
-1.  **SEA-ADM1** を選択します。
+1. **SEA-ADM1** を選択します。
+
 2. 次の資格情報を使用してサインインします。
    - ユーザー名: **Administrator**
+   
    - パスワード: **Pa55w.rd**
+   
    - ドメイン: **CONTOSO**
-
-## <a name="exercise-1-deploying-a-new-domain-controller-on-server-core"></a>演習 1: Server Core への新しいドメイン コントローラーの展開
-
-この演習の主なタスクは次のとおりです。
-
-1. Server Core に AD DS を展開する
-2. AD DS インストールの準備をして、リモート サーバーを昇格させる
-3. AD DS でオブジェクトを管理する
+   
+     
 
 ### <a name="task-1-deploy-ad-ds-on-a-new-windows-server-core-server"></a>タスク 1: Server Core に AD DS を展開する
 
 1. **SEA-ADM1** に以下の資格情報でサインインします。
 
-   | 資格情報       |                            |
+   | 資格情報       | 値                         |
    | -------------- | -------------------------- |
    | **ユーザー名** | **Contoso\\Administrator** |
    | **パスワード** | **Pa55w.rd**               |
