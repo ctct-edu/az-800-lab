@@ -4,7 +4,7 @@ lab:
   module: 'Module 2: Implementing Identity in Hybrid Scenarios'
 ---
 
-# <a name="lab-implementing-integration-between-ad-ds-and-azure-ad"></a>ラボ: AD DS と Azure AD の統合の実装
+# <a name="lab-implementing-integration-between-ad-ds-and-azure-ad"></a>Lab2b: AD DS と Azure AD の統合の実装
 
 ## <a name="scenario"></a>シナリオ
 
@@ -20,7 +20,7 @@ Microsoft Azure Active Directory (Azure AD) を使用して Azure リソース�
 
 ## <a name="architecture"></a>アーキテクチャの図
 
-
+![AZ-800_Lab02_architecture2](./media/AZ-800_Lab02_architecture2.png)
 
 ## <a name="lab-setup"></a>ラボのセットアップ
 
