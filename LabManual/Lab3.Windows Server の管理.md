@@ -116,13 +116,13 @@ Contoso, Ltd. は、自社の環境に新しいサーバーを複数新規に実
 
 <img src="./media/AZ-800_Lab3_05.png" alt="AZ-800_Lab3_05" style="zoom: 50%;" />
 
-1.   **[すべての接続]** ページに戻り、**sea-dc1.contoso.com**  が Windows Admin Center に追加されたことを確認します。
+9. **[すべての接続]** ページに戻り、**sea-dc1.contoso.com**  が Windows Admin Center に追加されたことを確認します。
 
-   ![AZ-800_Lab3_06](./media/AZ-800_Lab3_06.png)
+![AZ-800_Lab3_06](./media/AZ-800_Lab3_06.png)
 
-   **※このタスクを終了すると、Windows Admin Center から複数のリモートサーバーを管理できるように構成できたことが確認できます。**
+**※このタスクを終了すると、Windows Admin Center から複数のリモートサーバーを管理できるように構成できたことが確認できます。**
 
-   
+
 
 ### <a name="task-3-configure-windows-admin-center-extensions"></a>タスク 3: Windows Admin Center 拡張機能を構成する
 
