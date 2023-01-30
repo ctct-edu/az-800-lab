@@ -69,10 +69,12 @@ Contoso, Ltd. は、自社の環境に新しいサーバーを複数新規に実
 
 1. **SEA-ADM1** で Microsoft Edge を開始して、`https://SEA-ADM1.contoso.com` にアクセスします。 
 
-1.  **[ Windows Security (Windows セキュリティ)]** ダイアログ ボックスで次の資格情報を入力し、 **[ OK ]** をクリックします。
+1. **[ Windows Security (Windows セキュリティ)]** ダイアログ ボックスで次の資格情報を入力し、 **[ OK ]** をクリックします。
 
-   - Username (ユーザー名) : **Contoso\Administrator**
-   - Password (パスワード) :  **Pa55w.rd**
+   | 設定                  | 値                        |
+   | --------------------- | ------------------------- |
+   | Username (ユーザー名) | **Contoso\Administrator** |
+   | Password (パスワード) | **Pa55w.rd**              |
 
    
 
@@ -81,7 +83,6 @@ Contoso, Ltd. は、自社の環境に新しいサーバーを複数新規に実
    ※**「Successfully updated your extentions」** というポップアップメッセージが表示される場合がありますが、 **[OK]** をクリックして構いません。
 
    <img src="./media/AZ-800_Lab3_01.png" alt="AZ-800_Lab3_01" style="zoom: 33%;" />
-
 
 > **※必要に応じ、以下の手順を実行し、Windows Admin Center の表示を日本語へ変更することができます。**
 >
