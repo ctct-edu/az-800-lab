@@ -11,7 +11,7 @@
 - Server Core に新しいドメイン コントローラーを展開する。
 - グループ ポリシーを構成する。
 
-## <a name="estimated-time-45-minutes"></a>予想所要時間: 60 分
+## <a name="estimated-time-45-minutes"></a>予想所要時間: 20 分
 
 ## <a name="architecture"></a>アーキテクチャの図
 
