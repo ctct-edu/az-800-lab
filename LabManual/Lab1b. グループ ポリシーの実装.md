@@ -9,8 +9,9 @@ Contoso Ltd. のITチームでは、組織のコンプライアンスに準拠�
 このラボを完了すると、次のことができるようになります。
 
 - グループ ポリシーを構成する。
+- グループポリシーを検証する。
 
-## <a name="estimated-time-45-minutes"></a>予想所要時間: 30 分
+## <a name="estimated-time-45-minutes"></a>予想所要時間: 25 分
 
 ## <a name="architecture"></a>アーキテクチャの図
 
@@ -51,7 +52,7 @@ Contoso Ltd. のITチームでは、組織のコンプライアンスに準拠�
 
    ![AZ-800_Lab1_18](./media/AZ-800_Lab1_18.png)
 
-   ※Group Policy Objects コンテナーには、既定でリンク済みのDefault Domain Contorollers Policyと Default Domain Policyが格納されています。
+   ※Group Policy Objects コンテナーには、既定でリンク済みのDefault Domain Controllers Policyと Default Domain Policyが格納されています。
 
 1. ナビゲーション ペインで、**[Group Policy Objects (グループ ポリシー オブジェクト)]** コンテナーのコンテキスト メニューを右クリックして、 **[New (新規)]** を選択します。
 
