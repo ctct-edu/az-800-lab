@@ -4,17 +4,22 @@ lab:
   module: 'Module 2: Implementing Identity in Hybrid Scenarios'
 ---
 
-# <a name="lab-implementing-integration-between-ad-ds-and-azure-ad"></a>Lab2b: AD DS と Azure AD の統合の実装
+# <a name="lab-implementing-integration-between-ad-ds-and-azure-ad"></a>Lab2b: Azure AD 統合のためのオンプレミス AD DS の準備
 
 ## <a name="scenario"></a>シナリオ
 
-Microsoft Azure Active Directory (Azure AD) を使用して Azure リソースへのアクセスを認証および承認したことで生じる管理と監視のオーバーヘッドについての懸念に対応するために、あなたは、オンプレミスの Active Directory Domain Services (AD DS) と Azure AD の間の統合をテストし、複数のユーザー アカウントの管理に、オンプレミスとクラウド リソースを組み合わせて使用することに関するビジネス上の懸念に対処できることを検証することにしました。
+あなたは、既存の Active Directory 環境で Azure AD との統合の準備ができていることを確認する必要があります。 そのため、IdFix ツールを実行し、Active Directory ユーザーの UPN が Azure AD テナントのカスタム ドメイン名と一致することを確保します。
 
-## <a name="objectives"></a>目標
+## <a name="objectives"></a>目標とタスク
 
 このラボを完了すると、次のことができるようになります。
 
 - IdFix DirSync エラー修復ツールの実行を含め、オンプレミス AD DS と Azure AD の統合の準備を行う。
+
+この演習の主なタスクは次のとおりです。
+
+1. IdFix をインストールする。
+1. IdFix を実行する。
 
 ## <a name="estimated-time-60-minutes"></a>予想所要時間: 10 分
 
@@ -33,17 +38,6 @@ Microsoft Azure Active Directory (Azure AD) を使用して Azure リソース�
    - ドメイン: **CONTOSO**
 
 このラボでは、仮想マシンと Azure AD テナントを使用します。 
-
-## <a name="exercise-2-preparing-on-premises-ad-ds-for-azure-ad-integration"></a>演習 2: Azure AD 統合のためのオンプレミス AD DS の準備
-
-### <a name="scenario"></a>シナリオ
-
-あなたは、既存の Active Directory 環境で Azure AD との統合の準備ができていることを確認する必要があります。 そのため、IdFix ツールを実行し、Active Directory ユーザーの UPN が Azure AD テナントのカスタム ドメイン名と一致することを確保します。
-
-この演習の主なタスクは次のとおりです。
-
-1. IdFix をインストールする。
-1. IdFix を実行する。
 
 
 
