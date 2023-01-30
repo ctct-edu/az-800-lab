@@ -1,6 +1,6 @@
 ---
 lab:
-  title: 'ラボ: Windows Server の管理'
+  title: 'ラボ3: リモート サーバー管理の実装と使用'
   module: 'Module 3: Windows Server administration'
 ---
 
@@ -26,11 +26,11 @@ Contoso, Ltd. は、自社の環境に新しいサーバーを複数新規に実
 1. リモート管理を確認する。
 1. リモート PowerShell を使用してサーバーを管理する。
 
-## <a name="estimated-time-45-minutes"></a>予想所要時間: 40 分
+## <a name="estimated-time-45-minutes"></a>予想所要時間: 30 分
 
 ## <a name="architecture"></a>アーキテクチャの図
 
-
+![AZ-800_Lab03_architecture1](./media/AZ-800_Lab03_architecture1.png)
 
 ## <a name="lab-setup"></a>ラボのセットアップ
 
@@ -43,13 +43,13 @@ Contoso, Ltd. は、自社の環境に新しいサーバーを複数新規に実
    - パスワード: **Pa55w.rd**
    - ドメイン: **CONTOSO**
 
-このラボでは、仮想マシンと Azure AD テナントを使用 します。 Azure AD テナントへの認証情報は、ラボの **[Home]** タブで提供されているものを使用してください。
+このラボでは、仮想マシンを使用 します。
 
 
 
 ### <a name="task-1-install-windows-admin-center"></a>タスク 1: Windows Admin Center をインストールする
 
-1. **SEA-ADM1** で、 [スタート] を選択し、 **[ Windows PowerShell (管理者) ]** を選択します。
+1. **SEA-ADM1** で、 **[スタート]** を選択し、 **[ Windows PowerShell (管理者) ]** を選択します。
 1. **Windows PowerShell** コンソールで、次のコマンドレットを実行し、Windows Admin Center の最新バージョンをインターネットからダウンロードします。
    
    ```powershell
