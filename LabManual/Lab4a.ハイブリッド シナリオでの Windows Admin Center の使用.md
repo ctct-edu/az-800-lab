@@ -16,10 +16,10 @@ Contoso では、オンプレミスとは別に、Azure VM の管理も検討し
 
 - Azure Bastion を構築し、ブラウザでAzure VM にアクセスする
 
-1. この演習の主なタスクは次のとおりです。
+この演習の主なタスクは次のとおりです。
 
-   1. 事前に作成されたリソース グループを特定する。
-   1. Azure Resource Manager テンプレートを使用して Azure VM を作成する。
+1. 事前に作成されたリソース グループを特定する。
+1. Azure Resource Manager テンプレートを使用して Azure VM を作成する。
 
 ## <a name="estimated-time-90-minutes"></a>予想所要時間: 15 分
 
