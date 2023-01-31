@@ -129,11 +129,7 @@ Contoso では、オンプレミスとは別に、Azure VM の管理も検討し
 
 1. 実行結果の **[ProvisioningState]** が **[Success]** となっていることを確認して、Cloud Shell ペインを閉じます。
 
-4. Azure portalのツール バーに、**「Virtual Machines」**と入力し、 **[az800l04-vm0]** という仮想マシンが作成されたことを確認してください。 
-
-   ![AZ-800_Lab4_05](./media/AZ-800_Lab4_05.png)
-
-   
+4. Azure portalのツール バーに、 **「Virtual Machines」** と入力し、 **[az800l04-vm0]** という仮想マシンが作成されたことを確認してください。 
 
    
 
