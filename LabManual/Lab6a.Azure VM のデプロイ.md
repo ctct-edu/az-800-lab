@@ -30,7 +30,7 @@ Azure ベースの操作を効率化するために、Azure VM への Windows Se
 
 ## <a name="architecture"></a>アーキテクチャの図
 
-
+![AZ-800_Lab06_architecture1](./media/AZ-800_Lab06_architecture1.png)
 
 ## <a name="lab-setup"></a>ラボのセットアップ
 
