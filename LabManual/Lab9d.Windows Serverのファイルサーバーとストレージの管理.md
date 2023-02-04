@@ -129,11 +129,11 @@ lab:
    >
    > **注: ステップが完了するまで待ちます。 これには 1 分ほどかかります。**
 
-1.  Step 5 の 37行目を選択して、F8 で実行します。
+1. Step 5 の 37行目を選択して、F8 で実行します。
 
    > **注: ステップが完了するまで1 分程度待ちます。 コマンドの実行結果で、FriendlyName 属性の値が S2DStoragePool であることを確認します。**
 
-1.  **[Failover Cluster Manager (フェールオーバー クラスター マネージャー)]** ウィンドウに切り替え、 **[S2DCluster.Contoso.com] - [Storage]**  の順に展開し、 **[Pool]** を選択します。 **Cluster Pool 1** があることを確認してください。
+1. **[Failover Cluster Manager (フェールオーバー クラスター マネージャー)]** ウィンドウに切り替え、 **[S2DCluster.Contoso.com] - [Storage]**  の順に展開し、 **[Pool]** を選択します。 **Cluster Pool 1** があることを確認してください。
 
    ![AZ-800_Lab9_29](./media/AZ-800_Lab9_29.png)
 
@@ -143,7 +143,7 @@ lab:
 
    > **注: ステップが完了するまで待ちます。 ** 
 
-1.  **[Failover Cluster Manager (フェールオーバー クラスター マネージャー)]** ウィンドウに切り替え、 **[S2DCluster.Contoso.com] - [Storage]**  の順に展開し、 **[Disks]** を選択します。 **Cluster Virtual Disk (CSV)** があることを確認してください。
+1. **[Failover Cluster Manager (フェールオーバー クラスター マネージャー)]** ウィンドウに切り替え、 **[S2DCluster.Contoso.com] - [Storage]**  の順に展開し、 **[Disks]** を選択します。 **Cluster Virtual Disk (CSV)** があることを確認してください。
 
    ![AZ-800_Lab9_30](./media/AZ-800_Lab9_30.png) 
 
