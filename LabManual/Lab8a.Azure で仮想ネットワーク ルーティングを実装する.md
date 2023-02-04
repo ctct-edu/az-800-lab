@@ -48,17 +48,9 @@ lab:
 
 ### **事前準備 : ラボ ファイルをダウンロードする**
 
-1.  **SEA-ADM1** を選択します。
+1.  **SEA-AMD1** にサインイン後、 **[スタート]** メニューを選択し、 **[ Windows PowerShell ]** を起動します。
 
-2. 次の資格情報を使用してサインインします。
-
-   ユーザー名: **Administrator**
-   パスワード: **Pa55w.rd**
-   ドメイン: **CONTOSO**
-
-3.   **[スタート]** メニューを選択し、 **[ Windows PowerShell ]** を起動します。
-
-4.  次の Windows PowerShell コマンドレットを実行して、ラボ ファイルの最新バージョンを仮想マシンにダウンロードします。
+2. 次の Windows PowerShell コマンドレットを実行して、ラボ ファイルの最新バージョンを仮想マシンにダウンロードします。
 
    ```powershell
    ([System.Net.WebClient]::new()).DownloadFile('https://github.com/MicrosoftLearning/AZ-800-Administering-Windows-Server-Hybrid-Core-Infrastructure/archive/refs/heads/master.zip', 'C:\Labfiles\master.zip')
