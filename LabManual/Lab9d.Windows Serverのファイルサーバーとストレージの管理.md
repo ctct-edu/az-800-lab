@@ -141,7 +141,7 @@ lab:
 
 1. **Windows PowerShell ISE** に切り替え、Step 6  の 42 行目を選択して F8 で実行します。
 
-   > **注: ステップが完了するまで待ちます。 ** 
+   >  **注: ステップが完了するまで待ちます。** 
 
 1. **[Failover Cluster Manager (フェールオーバー クラスター マネージャー)]** ウィンドウに切り替え、 **[S2DCluster.Contoso.com] - [Storage]**  の順に展開し、 **[Disks]** を選択します。 **Cluster Virtual Disk (CSV)** があることを確認してください。
 
