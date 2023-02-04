@@ -38,9 +38,6 @@ Contoso,Ltd で使用しているドライブ **M** は使用量が多く、一�
 
 仮想マシン: **SEA-SVR3**、**SEA-ADM1** を使用します。 
 
-- 演習 1 - 3 : **SEA-DC1**、**SEA-SVR3**、**SEA-ADM1**
-- 演習 4 : **SEA-DC1**、**SEA-SVR1**、**SEA-SVR2**、**SEA-SVR3**、**SEA-ADM1**
-
 1. **SEA-ADM1** を選択します。
 1. 次の資格情報を使用してサインインします。
 
