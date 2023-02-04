@@ -122,7 +122,7 @@ Contoso,Ltd で使用しているドライブ **M** は使用量が多く、一�
 
 16. Windows PowerShellプロンプトに戻ったら、次のコマンドレットを順番に実行し、ReFS でフォーマットされた新しいドライブを作成します。
 
-    
+    > **注 : 以下のコマンドレットを実行すると、1番のディスクに M ドライブが作成されます。**
 
     ```powershell
     Get-Disk
@@ -222,8 +222,10 @@ Contoso,Ltd で使用しているドライブ **M** は使用量が多く、一�
 - ユーザー名: Contoso\Administrator
 - パスワード：Pa55w.rd
 
-7.   **Windows Admin Center** に **sea-svr3.contoso.com**  が追加されたことを確認したら、[すべての接続] ウィンドウから、 **sea-svr3.contoso.com**  を選択します。
+7. **Windows Admin Center** に **sea-svr3.contoso.com**  が追加されたことを確認したら、[すべての接続] ウィンドウから、 **sea-svr3.contoso.com**  を選択します。
+
 8. 左ナビゲーションペインの **[ツール]** から **[PowerShell]** を選択します。
+
 9. プロンプトが表示されたら、**パスワード (Pa55w.rd)** を入力してリモートセッションを開始します。
 
 10. Windows PowerShell コンソールで次のコマンドレットを実行し、重複排除をトリガーします。
@@ -264,13 +266,17 @@ Contoso,Ltd で使用しているドライブ **M** は使用量が多く、一�
 
 15. **SEA-ADM1** で、Server Manager の **[ディスク]** ウィンドウに切り替え、右上隅の **[更新]** をクリックします。
 
-16.  **[VOLUMES]** セクションで **[M:]** を選択し、右クリックして **[Properties (プロパティ)]** を選択します。
+16. **[VOLUMES]** セクションで **[M:]** を選択し、右クリックして **[Properties (プロパティ)]** を選択します。
 
-17.  [**Volume (M:) Properties]**ウィンドウで、**[Deduplication rate (重複排除率)]** と **[Deduplication savings (重複排除の節約)]** の値を確認します。
+17. [**Volume (M:) Properties]**ウィンドウで、**[Deduplication rate (重複排除率)]** と **[Deduplication savings (重複排除の節約)]** の値を確認します。
+
+    
 
     ![AZ-800_Lab9_07](./media/AZ-800_Lab9_07.png)
 
     **※Deduplication (データ重複除去)が有効になっており、ボリュームMでデータ重複除去が行われた結果が確認できます。確認ができたら、プロパティを [OK] で閉じ、次の演習に進んでください。**
+
+    
 
     
 
