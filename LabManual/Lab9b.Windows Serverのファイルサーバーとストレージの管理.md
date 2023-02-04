@@ -189,13 +189,13 @@ Contoso の経営陣は、iSCSI を使用して、一元化された記憶域を
 
 ![AZ-800_Lab9_10](./media/AZ-800_Lab9_10.png)
 
-24.  **[Quick Connect (クイック接続)]** ダイアログ ボックスで、検出されたターゲット名が **iqn.1991-05.com.microsoft:sea-svr3-iscscifarm-target** であることを確認し、 **[Done (完了)]** を選択します。
-
-​    
+24. **[Quick Connect (クイック接続)]** ダイアログ ボックスで、検出されたターゲット名が **iqn.1991-05.com.microsoft:sea-svr3-iscscifarm-target** であることを確認し、 **[Done (完了)]** を選択します。
 
     ![AZ-800_Lab9_11](./media/AZ-800_Lab9_11.png)
-    
-    ※ **[iSCSI Initiator Properties]** ダイアログ ボックスで、 **[ OK ]** をクリックし次のタスクに進みます。
+
+
+
+※ **[iSCSI Initiator Properties]** ダイアログ ボックスで、 **[ OK ]** をクリックし次のタスクに進みます。
 
 
 ​    
