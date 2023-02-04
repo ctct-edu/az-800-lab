@@ -34,7 +34,7 @@ lab:
 
 ## <a name="lab-setup"></a>ラボのセットアップ
 
-仮想マシン: **SEA-DC1**、**SEA-SVR1**、**SEA-SVR2**、**SEA-SVR3**、**SEA-ADM1** を使用します。 
+仮想マシン: **SEA-SVR1**、**SEA-SVR2**、**SEA-SVR3**、**SEA-ADM1** を使用します。 
 
 1. **SEA-ADM1** を選択します。
 1. 次の資格情報を使用してサインインします。
@@ -79,7 +79,7 @@ lab:
 
 
 
-10.  スクリプトファイル、 **Implement-StorageSpacesDirect.ps1** を選択し、 **[Open (開く)]** をクリックします。
+10. スクリプトファイル、 **Implement-StorageSpacesDirect.ps1** を選択し、 **[Open (開く)]** をクリックします。
 
 11. **Windows PowerShell ISE** で スクリプトの Step 1 の16行目を選択して、 F8 キーで実行します。
 
@@ -87,15 +87,13 @@ lab:
     >
     > **注 : インストールが完了するまでに、2～3分程度待ちます。コマンドの実行結果で、 [Exit Code] の結果が [Success] と表示されればインストール完了です。**
 
-12.  Step 1 の 17行目を選択して、 F8 で実行します。
+12. Step 1 の 17行目を選択して、 F8 で実行します。
 
     > **注 : SEA-SVR1、SEA-SVR2、およびSEA-SVR3を再起動します。**
 
-13.   Step 1 の18行目を選択して、 F8 で実行します。
+13. Step 1 の18行目を選択して、 F8 で実行します。
 
     > **注 : SEA-ADM1にフェールオーバー クラスター マネージャーツールをインストールします。**
-
-    
 
 ### <a name="task-2-create-and-validate-the-failover-cluster"></a>タスク 2: フェールオーバー クラスターを作成して検証する 
 
