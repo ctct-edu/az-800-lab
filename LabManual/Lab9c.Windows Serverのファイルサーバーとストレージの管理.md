@@ -159,15 +159,15 @@ lab:
    Enter-PSSession -ComputerName sea-svr3.contoso.com
    ```
 
-1.  次のコマンドレットを実行し、 **SEA-SVR3** に対し、セキュリティが強化された Windows Defender ファイアウォールのすべてのファイルとプリンターの共有規則を有効にします。
+1. 次のコマンドレットを実行し、 **SEA-SVR3** に対し、セキュリティが強化された Windows Defender ファイアウォールのすべてのファイルとプリンターの共有規則を有効にします。
 
-   ```
+   ```powershell
    Enable-NetFirewallRule -Group "@FirewallAPI.dll,-28502"
    ```
 
 1. **SEA-ADM1**  のタスクバーから **エクスプローラー**を起動します。
 
-1.  ファイル エクスプローラーウィンドウのアドレスバーに `\\SEA-SVR3.contoso.com\t$`と入力し、検索します。
+1. ファイル エクスプローラーウィンドウのアドレスバーに `\\SEA-SVR3.contoso.com\t$`と入力し、検索します。
 
 1. `\\SEA-SVR3.contoso.com\t$` に**TestData** という名前のフォルダーを新規作成して、フォルダー内に **TestDocument.txt** という名前のドキュメントを新規作成します。
 
