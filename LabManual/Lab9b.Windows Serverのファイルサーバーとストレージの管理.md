@@ -33,10 +33,7 @@ Contoso の経営陣は、iSCSI を使用して、一元化された記憶域を
 
 ## <a name="lab-setup"></a>ラボのセットアップ
 
-仮想マシン: **SEA-DC1**、**SEA-SVR1**、**SEA-SVR2**、**SEA-SVR3**、**SEA-ADM1** を使用します。 
-
-- 演習 1 - 3 : **SEA-DC1**、**SEA-SVR3**、**SEA-ADM1**
-- 演習 4 : **SEA-DC1**、**SEA-SVR1**、**SEA-SVR2**、**SEA-SVR3**、**SEA-ADM1**
+仮想マシン: **SEA-DC1**、**SEA-SVR3**、**SEA-ADM1** を使用します。 
 
 1. **SEA-ADM1** を選択します。
 1. 次の資格情報を使用してサインインします。
@@ -194,13 +191,14 @@ Contoso の経営陣は、iSCSI を使用して、一元化された記憶域を
 
 24.  **[Quick Connect (クイック接続)]** ダイアログ ボックスで、検出されたターゲット名が **iqn.1991-05.com.microsoft:sea-svr3-iscscifarm-target** であることを確認し、 **[Done (完了)]** を選択します。
 
-    
+​    
 
     ![AZ-800_Lab9_11](./media/AZ-800_Lab9_11.png)
-
+    
     ※ **[iSCSI Initiator Properties]** ダイアログ ボックスで、 **[ OK ]** をクリックし次のタスクに進みます。
-    
-    
+
+
+​    
 
 ### <a name="task-3-verify-iscsi-disk-configuration"></a>タスク 3: iSCSI ディスクの構成を確認する 
 
