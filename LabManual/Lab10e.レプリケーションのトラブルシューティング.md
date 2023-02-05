@@ -25,7 +25,7 @@ Contoso では、レプリケーションの競合など、レプリケーショ
 
 ## <a name="architecture"></a>アーキテクチャの図
 
-
+![AZ-800_Lab10_architecture4](./media/AZ-800_Lab10_architecture4.png)
 
 ## <a name="lab-setup"></a>ラボのセットアップ
 
