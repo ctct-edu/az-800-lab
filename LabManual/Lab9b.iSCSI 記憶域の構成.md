@@ -29,7 +29,7 @@ Contoso の経営陣は、iSCSI を使用して、一元化された記憶域を
 
 ## <a name="architecture"></a>アーキテクチャの図
 
-
+![AZ-800_Lab09_architecture2](./media/AZ-800_Lab09_architecture2.png)
 
 ## <a name="lab-setup"></a>ラボのセットアップ
 
