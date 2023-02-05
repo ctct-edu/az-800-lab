@@ -29,7 +29,7 @@ DFS レプリケーションが File Sync に正常に置き換えられたこ�
 
 ## <a name="architecture"></a>アーキテクチャの図
 
-
+![AZ-800_Lab10_architecture4](./media/AZ-800_Lab10_architecture4.png)
 
 ## <a name="lab-setup"></a>ラボのセットアップ
 
