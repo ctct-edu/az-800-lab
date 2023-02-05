@@ -28,11 +28,11 @@ Contoso,Ltd で使用しているドライブ **M** は使用量が多く、一�
 
    
 
-## <a name="estimated-time-90-minutes"></a>予想所要時間: 90 分
+## <a name="estimated-time-90-minutes"></a>予想所要時間: 15 分
 
 ## <a name="architecture"></a>アーキテクチャの図
 
-
+![AZ-800_Lab09_architecture1](./media/AZ-800_Lab09_architecture1.png)
 
 ## <a name="lab-setup"></a>ラボのセットアップ
 
