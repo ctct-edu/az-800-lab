@@ -28,7 +28,7 @@ lab:
 
 ## <a name="lab-setup"></a>ラボのセットアップ
 
-仮想マシン: **SEA-DC1**、**SEA-SVR1**、**SEA-SVR2**、**SEA-SVR3**、**SEA-ADM1** を使用します。 
+仮想マシン: **SEA-SVR3**、**SEA-ADM1** を使用します。 
 
 1. **SEA-ADM1** を選択します。
 1. 次の資格情報を使用してサインインします。
