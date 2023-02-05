@@ -30,7 +30,7 @@ lab:
 
 ## <a name="architecture"></a>アーキテクチャの図
 
-
+![AZ-800_Lab010_architecture3](./media/AZ-800_Lab010_architecture3.png)
 
 ## <a name="lab-setup"></a>ラボのセットアップ
 
