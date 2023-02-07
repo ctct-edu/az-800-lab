@@ -106,7 +106,7 @@ lab:
 
 ![AZ-800_Lab4_12](./media/AZ-800_Lab4_12.png)
 
-7. **[Windows Admin Center で Azure の使用を開始する]** ウィンドウで、**「2.このコードをコピーします」**  で**[コピー]** を選択します。
+7. **[Windows Admin Center で Azure の使用を開始する]** ウィンドウで、**「2.このコードをコピーします」**  で **[コピー]**  を選択します。
 
 ![AZ-800_Lab4_13](./media/AZ-800_Lab4_13.png)
 
