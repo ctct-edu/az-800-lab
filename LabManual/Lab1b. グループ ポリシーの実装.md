@@ -251,7 +251,7 @@ Contoso Ltd. のITチームでは、組織のコンプライアンスに準拠�
 
    
 
-1. **「You have selected a link to a Group Policy Object (GPO). Except for changes to link properties, changes you make here are global to the GPO, and will impact all other locations where this GPO is linked.」 ([グループ ポリシー管理コンソール] ダイアログ ボックスで、グループ ポリシー オブジェクト (GPO) へのリンクを選択しました。リンク プロパティへの変更以外、ここで行われた変更は GPO にグローバルに適用され、この GPO がリンクされた他の場所すべてに影響します。)というメッセージが表示されたら、 [Do not show this message again(今後このメッセージを表示しない)]**にチェックを入れて  **[OK]** をクリックします。
+1.  **「You have selected a link to a Group Policy Object (GPO). Except for changes to link properties, changes you make here are global to the GPO, and will impact all other locations where this GPO is linked.」 ([グループ ポリシー管理コンソール] ダイアログ ボックスで、グループ ポリシー オブジェクト (GPO) へのリンクを選択しました。リンク プロパティへの変更以外、ここで行われた変更は GPO にグローバルに適用され、この GPO がリンクされた他の場所すべてに影響します。)というメッセージが表示されたら、 [Do not show this message again(今後このメッセージを表示しない)]**にチェックを入れて  **[OK]** をクリックします。
 
 1. **[Security Filtering (セキュリティ フィルター処理)]** セクションを確認し、**[Authenticated Users (認証されたユーザー)]** に GPO が既定で適用されることが確認できます。
 
@@ -271,29 +271,30 @@ Contoso Ltd. のITチームでは、組織のコンプライアンスに準拠�
 
    > **注: 警告メッセージは、「グループ ポリシーでは、ユーザーの GPO 設定を正常に適用するために、各コンピューター アカウントにドメイン コントローラーから GPO データを読み取るアクセス許可が求められます。 GPO のセキュリティ フィルター処理設定を変更する場合は、注意してください。」と表示されています。**
 
-1. **[Security Filtering (セキュリティ フィルター処理)]** セクションで、**[Add (追加)]** をクリックします。
 
-   ![AZ-800_Lab1_50](./media/AZ-800_Lab1_50.png)
+6. **[Security Filtering (セキュリティ フィルター処理)]** セクションで、**[Add (追加)]** をクリックします。
 
-1. **[Select User, Computer, or Group (ユーザー、コンピューター、またはグループの選択)]** ダイアログ ボックスで、**[Enter the object name to select (選択するオブジェクト名を入力してください)]** テキスト ボックスに「**SeattleBranchUsers**」と入力してから、**[OK]** をクリックします。
+![AZ-800_Lab1_50](./media/AZ-800_Lab1_50.png)
 
-   ![AZ-800_Lab1_51](./media/AZ-800_Lab1_51.png)
+7. **[Select User, Computer, or Group (ユーザー、コンピューター、またはグループの選択)]** ダイアログ ボックスで、**[Enter the object name to select (選択するオブジェクト名を入力してください)]** テキスト ボックスに「**SeattleBranchUsers**」と入力してから、**[OK]** をクリックします。
 
-1.  **[Security Filtering (セキュリティ フィルター処理)]** セクションに戻り、再度 **[Add (追加)]** をクリックします。
+![AZ-800_Lab1_51](./media/AZ-800_Lab1_51.png)
 
-1. **[Select User, Computer, or Group (ユーザー、コンピューター、またはグループの選択)]** ダイアログ ボックスで、**[Object Types (オブジェクトの種類)]** をクリックします。
+8. **[Security Filtering (セキュリティ フィルター処理)]** セクションに戻り、再度 **[Add (追加)]** をクリックします。
 
-   ![AZ-800_Lab1_52](./media/AZ-800_Lab1_52.png)
+9. **[Select User, Computer, or Group (ユーザー、コンピューター、またはグループの選択)]** ダイアログ ボックスで、**[Object Types (オブジェクトの種類)]** をクリックします。
 
-1. **[Object Types (オブジェクトの種類)]** ダイアログ ボックスで、**[Computers]** のチェックボックスをオンにしてから、**[OK]** をクリックします。
+![AZ-800_Lab1_52](./media/AZ-800_Lab1_52.png)
 
-   ![AZ-800_Lab1_53](./media/AZ-800_Lab1_53.png)
+10. **[Object Types (オブジェクトの種類)]** ダイアログ ボックスで、**[Computers]** のチェックボックスをオンにしてから、**[OK]** をクリックします。
 
-1. **[Select User, Computer, or Group (ユーザー、コンピューター、またはグループの選択)]** ダイアログ ボックスで、**[Enter the object name to select (選択するオブジェクト名を入力してください)]** ボックスに「**SEA-ADM1**」と入力してから **[OK]** をクリックします。
+![AZ-800_Lab1_53](./media/AZ-800_Lab1_53.png)
 
-   ![AZ-800_Lab1_54](./media/AZ-800_Lab1_54.png)
+11. **[Select User, Computer, or Group (ユーザー、コンピューター、またはグループの選択)]** ダイアログ ボックスで、**[Enter the object name to select (選択するオブジェクト名を入力してください)]** ボックスに「**SEA-ADM1**」と入力してから **[OK]** をクリックします。
 
-   ※Security Filtering に、コンピューターオブジェクトのSEA-ADM1とグループオブジェクトのSaettleBrunchUsersグループが追加されました。次のオプションの手順で必要なフィルター設定です。
+![AZ-800_Lab1_54](./media/AZ-800_Lab1_54.png)
+
+※Security Filtering に、コンピューターオブジェクトのSEA-ADM1とグループオブジェクトのSaettleBrunchUsersグループが追加されました。次のオプションの手順で必要なフィルター設定です。
 
 ### <a name="task-7-verify-the-application-of-settings"></a>オプション4: 設定のシミュレーション結果を確認する
 
