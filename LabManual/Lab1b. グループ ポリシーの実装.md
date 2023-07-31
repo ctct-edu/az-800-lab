@@ -302,52 +302,53 @@ Contoso Ltd. のITチームでは、組織のコンプライアンスに準拠�
 
    ![AZ-800_Lab1_55](./media/AZ-800_Lab1_55.png)
 
-1. **[Group Policy Modeling (グループ ポリシーのモデル作成)]** のコンテキスト メニューを右クリックし、**[Group Policy Modeling Wizard (グループ ポリシーのモデル作成ウィザード)]** を選択します。
 
-   ![AZ-800_Lab1_56](./media/AZ-800_Lab1_56.png)
+2. **[Group Policy Modeling (グループ ポリシーのモデル作成)]** のコンテキスト メニューを右クリックし、**[Group Policy Modeling Wizard (グループ ポリシーのモデル作成ウィザード)]** を選択します。
 
-1. **[Group Policy Modeling Wizard (グループ ポリシーのモデル作成ウィザード)]**  画面では、**[Next (次へ)]** をクリックします。
+![AZ-800_Lab1_56](./media/AZ-800_Lab1_56.png)
 
-1. **[Domain Controller Selection (ドメイン コントローラーの選択)]** 画面では、既定の設定のまま、**[Next  (次へ)]** をクリックします。
+3. **[Group Policy Modeling Wizard (グループ ポリシーのモデル作成ウィザード)]**  画面では、**[Next (次へ)]** をクリックします。
 
-   ![AZ-800_Lab1_57](./media/AZ-800_Lab1_57.png)
+4. **[Domain Controller Selection (ドメイン コントローラーの選択)]** 画面では、既定の設定のまま、**[Next  (次へ)]** をクリックします。
 
-1. **[User and Computer Selection (ユーザーとコンピューターの選択)]** 画面の **[User information (ユーザー情報)]** セクションで、**[User]** を選択してから、テキスト ボックスに「**CONTOSO\Ty**」と入力するか、**[Browse (参照)]** ボタンを使用して **Ty** ユーザー アカウントを検索します。
+![AZ-800_Lab1_57](./media/AZ-800_Lab1_57.png)
 
-   ![AZ-800_Lab1_58](./media/AZ-800_Lab1_58.png)
+5. **[User and Computer Selection (ユーザーとコンピューターの選択)]** 画面の **[User information (ユーザー情報)]** セクションで、**[User]** を選択してから、テキスト ボックスに「**CONTOSO\Ty**」と入力するか、**[Browse (参照)]** ボタンを使用して **Ty** ユーザー アカウントを検索します。
 
-1. **[User and Computer Selection ユーザーとコンピューターの選択]** ページの **[Computer information (コンピューター情報)]** セクションで、**[Computer]** を選択し、テキスト ボックスに「**CONTOSO\SEA-ADM1**」と入力したあと、 **[Next (次へ)]** をクリックします。
+![AZ-800_Lab1_58](./media/AZ-800_Lab1_58.png)
 
-   ![AZ-800_Lab1_59](./media/AZ-800_Lab1_59.png)
+6. **[User and Computer Selection ユーザーとコンピューターの選択]** ページの **[Computer information (コンピューター情報)]** セクションで、**[Computer]** を選択し、テキスト ボックスに「**CONTOSO\SEA-ADM1**」と入力したあと、 **[Next (次へ)]** をクリックします。
 
-   
+![AZ-800_Lab1_59](./media/AZ-800_Lab1_59.png)
 
-1. **[Advanced Simulation Options (詳細シミュレーション オプション)]** 画面では、既定の設定のまま、**[Next (次へ)]** をクリックします。
 
-   ![AZ-800_Lab1_60](./media/AZ-800_Lab1_60.png)
 
-1. **[Alternate Active Directory Paths (代替 Active Directory パス)]** 画面の、ユーザーとコンピューターのロケーションを確認したら、 **[次へ]** をクリックします。(ユーザーロケーションはSeattle OU、コンピューターロケーションは Computers コンテナーが選択されているはずです。)
+7. **[Advanced Simulation Options (詳細シミュレーション オプション)]** 画面では、既定の設定のまま、**[Next (次へ)]** をクリックします。
 
-   ![AZ-800_Lab1_61](./media/AZ-800_Lab1_61.png)
+![AZ-800_Lab1_60](./media/AZ-800_Lab1_60.png)
 
-1. **[User Security Groups (ユーザー セキュリティ グループ)]** 画面で、グループのリストに **CONTOSO\\ SeattleBranchUsers** が含まれていることを確認してから、 **[Skip to the final page of this wizard without collecting additional data. (追加データを収集せずに、このウィザードの最終ページまでスキップします。)]**  のチェックボックスにチェックを入れ **[Next (次へ)]** を選択します。
+8. **[Alternate Active Directory Paths (代替 Active Directory パス)]** 画面の、ユーザーとコンピューターのロケーションを確認したら、 **[次へ]** をクリックします。(ユーザーロケーションはSeattle OU、コンピューターロケーションは Computers コンテナーが選択されているはずです。)
 
-   ![AZ-800_Lab1_62](./media/AZ-800_Lab1_62.png)
+![AZ-800_Lab1_61](./media/AZ-800_Lab1_61.png)
 
-   
+9. **[User Security Groups (ユーザー セキュリティ グループ)]** 画面で、グループのリストに **CONTOSO\\ SeattleBranchUsers** が含まれていることを確認してから、 **[Skip to the final page of this wizard without collecting additional data. (追加データを収集せずに、このウィザードの最終ページまでスキップします。)]**  のチェックボックスにチェックを入れ **[Next (次へ)]** を選択します。
 
-1. **[Summary of Selections (選択の要約)]** 画面で、**[Next (次へ)]** をクリックします。
+![AZ-800_Lab1_62](./media/AZ-800_Lab1_62.png)
 
-1. メッセージが表示されたら、**[Finish (完了)]** をクリックします。
 
-1. Group Policy Modeling に作成されたレポートの詳細ペインで、**[Details (詳細)]** タブを選択し、**[show all (すべて表示)]** を選択します。
 
-   ![AZ-800_Lab1_63](./media/AZ-800_Lab1_63.png)
+10. **[Summary of Selections (選択の要約)]** 画面で、**[Next (次へ)]** をクリックします。
 
-1. レポートで、 **[User Details (ユーザーの詳細)]** セクションが見つかるまで下にスクロールし、 **[Control Panel/Personalization (コントロールパネル/個人用設定)]** セクションを確認します。 **[Screen saver timeout]** 設定が無効になっており、優勢な GPO がSeattle Application Override GPO に設定されていることが確認できます。
+11. メッセージが表示されたら、**[Finish (完了)]** をクリックします。
 
-   ![AZ-800_Lab1_64](./media/AZ-800_Lab1_64.png)
+12. Group Policy Modeling に作成されたレポートの詳細ペインで、**[Details (詳細)]** タブを選択し、**[show all (すべて表示)]** を選択します。
 
-1. **[Group Policy Management (グループ ポリシーの管理)]** コンソールを閉じます。
+![AZ-800_Lab1_63](./media/AZ-800_Lab1_63.png)
+
+13. レポートで、 **[User Details (ユーザーの詳細)]** セクションが見つかるまで下にスクロールし、 **[Control Panel/Personalization (コントロールパネル/個人用設定)]** セクションを確認します。 **[Screen saver timeout]** 設定が無効になっており、優勢な GPO がSeattle Application Override GPO に設定されていることが確認できます。
+
+![AZ-800_Lab1_64](./media/AZ-800_Lab1_64.png)
+
+14. **[Group Policy Management (グループ ポリシーの管理)]** コンソールを閉じます。
 
 **結果**: この演習が完了すると、GPO を正常に作成して構成し、結果を確認できたことになります。
