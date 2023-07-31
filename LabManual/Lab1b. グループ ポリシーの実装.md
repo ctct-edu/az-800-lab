@@ -162,7 +162,7 @@ Contoso Ltd. のITチームでは、組織のコンプライアンスに準拠�
 
    
 
-1.  **SEA-ADM1** から一度サインアウトし、以下のユーザーでサインインします。
+1. **SEA-ADM1** から一度サインアウトし、以下のユーザーでサインインします。
 
    | ユーザー名     | CONTOSO\Ty   |
    | -------------- | ------------ |
@@ -170,33 +170,33 @@ Contoso Ltd. のITチームでは、組織のコンプライアンスに準拠�
 
    ※サインイン画面では **[Other user]** を選択してから資格情報を入力してください。
 
-1. タスク バーの検索ボックスに、「**Control Panel**」と入力して検索します。
+6. タスク バーの検索ボックスに、「**Control Panel**」と入力して検索します。
 
-1. **[Best match (最も一致する検索結果)]** リストで、**[Control Panel]** を選択します。
+7. **[Best match (最も一致する検索結果)]** リストで、**[Control Panel]** を選択します。
 
-1. [コントロール パネル] の検索ボックスに「**Screen Saver**」と入力し、**[change Screen Saver (スクリーン セーバーの変更)]** を選択します  (オプションが表示されるまでに数分かかる場合があります)。
+8. [コントロール パネル] の検索ボックスに「**Screen Saver**」と入力し、**[change Screen Saver (スクリーン セーバーの変更)]** を選択します  (オプションが表示されるまでに数分かかる場合があります)。
 
-   <img src="./media/AZ-800_Lab1_37.png" alt="AZ-800_Lab1_37"  />
+<img src="./media/AZ-800_Lab1_37.png" alt="AZ-800_Lab1_37"  />
 
-   
 
-1. **[Screen Saver Settings]** ダイアログ ボックスで、**[Wait (待ち時間)]** オプションがグレーアウトされていることが確認できます。また **[On resume, display logon screen (再開時にログオン画面に戻る)]** オプションのチェックボックスにチェックが入り、設定を変更できないことが確認できます。設定を確認したら、ダイアログボックスは **[OK]** をクリックして閉じます。
 
-   ![AZ-800_Lab1_38](./media/AZ-800_Lab1_38.png)
+9. **[Screen Saver Settings]** ダイアログ ボックスで、**[Wait (待ち時間)]** オプションがグレーアウトされていることが確認できます。また **[On resume, display logon screen (再開時にログオン画面に戻る)]** オプションのチェックボックスにチェックが入り、設定を変更できないことが確認できます。設定を確認したら、ダイアログボックスは **[OK]** をクリックして閉じます。
 
-   > **注: Screen saver timeout (スクリーン セーバーのタイムアウト)ポリシーを有効化しているため、ユーザーはスクリーンセーバーの待ち時間等を変更することはできません。**
-   >
-   > **注: [再開時にログオン画面に戻る] オプションが選択されて淡色表示になっていない場合は、Windows PowerShellを起動し `gpupdate /force` を実行してから再度確認してください。**
+![AZ-800_Lab1_38](./media/AZ-800_Lab1_38.png)
 
-1. タスク バーの検索ボックスに、**[regedit]** と入力し、検索結果に表示される **[Registry Editor]** をクリックします。**[Registry editing has been disabled by your administrator (レジストリ編集は、管理者によって使用不可にされています) ]**というエラー メッセージが表示されます。
+> **注: Screen saver timeout (スクリーン セーバーのタイムアウト)ポリシーを有効化しているため、ユーザーはスクリーンセーバーの待ち時間等を変更することはできません。**
+>
+> **注: [再開時にログオン画面に戻る] オプションが選択されて淡色表示になっていない場合は、Windows PowerShellを起動し `gpupdate /force` を実行してから再度確認してください。**
 
-   ![AZ-800_Lab1_39](./media/AZ-800_Lab1_39.png)
+10. タスク バーの検索ボックスに、**[regedit]** と入力し、検索結果に表示される **[Registry Editor]** をクリックします。**[Registry editing has been disabled by your administrator (レジストリ編集は、管理者によって使用不可にされています) ]**というエラー メッセージが表示されます。
 
-   > **注: Prevent access to registry editing tools (レジストリ編集ツールへアクセスできないようにする)ポリシーを有効化しているため、ユーザーはRegistry Editorを起動させることはできません。**
+![AZ-800_Lab1_39](./media/AZ-800_Lab1_39.png)
 
-1. ダイアログ ボックスを **[OK]** をクリックして閉じます。
+> **注: Prevent access to registry editing tools (レジストリ編集ツールへアクセスできないようにする)ポリシーを有効化しているため、ユーザーはRegistry Editorを起動させることはできません。**
 
-1.  **SEA-ADM1** からサインアウトし、 **CONTOSO\\Administrator** で再度サインインします。(パスワードは **Pa55w.rd** )
+11. ダイアログ ボックスを **[OK]** をクリックして閉じます。
+
+12. **SEA-ADM1** からサインアウトし、 **CONTOSO\\Administrator** で再度サインインします。(パスワードは **Pa55w.rd** )
 
 ### <a name="task-4-create-and-link-the-required-gpos"></a>オプション1 : GPO を新規作成時し、OUにリンクする
 
