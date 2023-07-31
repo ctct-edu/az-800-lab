@@ -198,33 +198,33 @@
    Enable-ADAccount Ty
    ```
 
-1.  **SeattleBranchUsers** という名前のドメイン グローバル グループを作成します。**SEA-ADM1** の **Windows PowerShell (管理者)** で以下のコマンドレットを実行します。
+1. **SeattleBranchUsers** という名前のドメイン グローバル グループを作成します。**SEA-ADM1** の **Windows PowerShell (管理者)** で以下のコマンドレットを実行します。
 
    ```powershell
    New-ADGroup SeattleBranchUsers -Path 'OU=Seattle,DC=contoso,DC=com' -GroupScope Global -GroupCategory Security
    ```
-   
-1. 以下のWindows PowerShell コマンドレットを実行し、 **SeattleBranchUsers** に ユーザー **Ty**  を追加します。
 
-   ```powershell
-   Add-ADGroupMember -Identity SeattleBranchUsers -Members Ty
-   ```
+10. 以下のWindows PowerShell コマンドレットを実行し、 **SeattleBranchUsers** に ユーザー **Ty**  を追加します。
 
-1. 以下のWindows PowerShell コマンドレットを実行し、 **SeattleBranchUsers** に ユーザー **Ty** が追加されたことを確認します。
+    ```powershell
+    Add-ADGroupMember -Identity SeattleBranchUsers -Members Ty
+    ```
 
-     ```powershell
-     Get-ADGroupMember -Identity SeattleBranchUsers
-     ```
+11. 以下のWindows PowerShell コマンドレットを実行し、 **SeattleBranchUsers** に ユーザー **Ty** が追加されたことを確認します。
 
-     ![AZ-800_Lab1_13](./media/AZ-800_Lab1_13.png)
+    ```powershell
+    Get-ADGroupMember -Identity SeattleBranchUsers
+    ```
 
-1. 以下のWindows PowerShell コマンドレットを実行し、ローカルの管理者グループ(Administrators グループ)にユーザー Ty を追加します。
+![AZ-800_Lab1_13](./media/AZ-800_Lab1_13.png)
 
-     ```powershell
-     Add-LocalGroupMember -Group 'Administrators' -Member 'CONTOSO\Ty'
-     ```
+12. 以下のWindows PowerShell コマンドレットを実行し、ローカルの管理者グループ(Administrators グループ)にユーザー Ty を追加します。
 
-     > **注:  この次の演習で検証のためにサインインする必要があるため、管理者グループにユーザーを追加しました。**
+    ```powershell
+    Add-LocalGroupMember -Group 'Administrators' -Member 'CONTOSO\Ty'
+    ```
+
+> **注:  この次の演習で検証のためにサインインする必要があるため、管理者グループにユーザーを追加しました。**
 
 #### **結果**: この演習が完了すると、AD DS に新しいドメイン コントローラーとマネージド オブジェクトが作成できています。
 
