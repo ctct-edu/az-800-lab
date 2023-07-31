@@ -46,21 +46,21 @@ Contoso Ltd. のITチームでは、組織のコンプライアンスに準拠�
 
    
 
-1.  **[Group Policy Management (グループ ポリシーの管理)]** コンソールのナビゲーション ペインで、 **[Forest:Contoso.com] - [Domains] - [Contoso.com]** の順に展開してから、 **[Group Policy Objects (グループ ポリシー オブジェクト)]** コンテナーを選択します。
+1. **[Group Policy Management (グループ ポリシーの管理)]** コンソールのナビゲーション ペインで、 **[Forest:Contoso.com] - [Domains] - [Contoso.com]** の順に展開してから、 **[Group Policy Objects (グループ ポリシー オブジェクト)]** コンテナーを選択します。
 
    ![AZ-800_Lab1_18](./media/AZ-800_Lab1_18.png)
 
    ※Group Policy Objects コンテナーには、既定でリンク済みのDefault Domain Controllers Policyと Default Domain Policyが格納されています。
 
-1. ナビゲーション ペインで、**[Group Policy Objects (グループ ポリシー オブジェクト)]** コンテナーのコンテキスト メニューを右クリックして、 **[New (新規)]** を選択します。
+3. ナビゲーション ペインで、**[Group Policy Objects (グループ ポリシー オブジェクト)]** コンテナーのコンテキスト メニューを右クリックして、 **[New (新規)]** を選択します。
 
-   
 
-   ![AZ-800_Lab1_19](./media/AZ-800_Lab1_19.png)
 
-   
+![AZ-800_Lab1_19](./media/AZ-800_Lab1_19.png)
 
-1.  **[Name]** テキスト ボックスに「**CONTOSO Standards**」と入力し、**[OK]** をクリックします。
+
+
+4. **[Name]** テキスト ボックスに「**CONTOSO Standards**」と入力し、**[OK]** をクリックします。
 
    
 
@@ -68,61 +68,61 @@ Contoso Ltd. のITチームでは、組織のコンプライアンスに準拠�
 
    
 
-1. **4** の手順で作成した **[CONTOSO Standards]** GPOを右クリックし、 **[Edit (編集)]** をクリックします。
+5. **4** の手順で作成した **[CONTOSO Standards]** GPOを右クリックし、 **[Edit (編集)]** をクリックします。
 
-   ![AZ-800_Lab1_21](./media/AZ-800_Lab1_21.png)
+![AZ-800_Lab1_21](./media/AZ-800_Lab1_21.png)
 
-   
 
-1.  **[Group Policy Management Editor (グループ ポリシー管理エディター)]** ウィンドウのナビゲーション ペインで、**[User Configuration (ユーザーの構成)] - [Policies (ポリシー)] - [Administrative Templates (管理用テンプレート)]** の順に展開してから **[System (システム)]** をクリックします。
 
-   ![AZ-800_Lab1_22](./media/AZ-800_Lab1_22.png)
+6. **[Group Policy Management Editor (グループ ポリシー管理エディター)]** ウィンドウのナビゲーション ペインで、**[User Configuration (ユーザーの構成)] - [Policies (ポリシー)] - [Administrative Templates (管理用テンプレート)]** の順に展開してから **[System (システム)]** をクリックします。
 
-1. System のポリシー一覧から、 **[Prevent access to registry editing tools (レジストリ編集ツールへアクセスできないようにする)]** ポリシーをダブルクリックします。
+![AZ-800_Lab1_22](./media/AZ-800_Lab1_22.png)
 
-   ![AZ-800_Lab1_23](./media/AZ-800_Lab1_23.png)
+7. System のポリシー一覧から、 **[Prevent access to registry editing tools (レジストリ編集ツールへアクセスできないようにする)]** ポリシーをダブルクリックします。
 
-1. **[Prevent access to registry editing tools (レジストリ編集ツールへアクセスできないようにする)]** ダイアログ ボックスで、**[Enabled (有効)]**、のラジオボタンをチェックし、 **[OK]** をクリックします。
+![AZ-800_Lab1_23](./media/AZ-800_Lab1_23.png)
 
-   
+8. **[Prevent access to registry editing tools (レジストリ編集ツールへアクセスできないようにする)]** ダイアログ ボックスで、**[Enabled (有効)]**、のラジオボタンをチェックし、 **[OK]** をクリックします。
 
-   ![AZ-800_Lab1_24](./media/AZ-800_Lab1_24.png)
 
-   > **※Prevent access to registry editing tools (レジストリ編集ツールへアクセスできないようにする)ポリシーを有効化すると、Windows のレジストリ エディター (Regedit.exe) を無効にします。ユーザーがRegedit.exeを実行しようとすると、「この操作はポリシー設定によって禁止されています」というメッセージが表示されるようになります。**
 
-1. ナビゲーション ペインに戻り、 **[User Configuration (ユーザーの構成)] - [Policies (ポリシー)] - [Administrative Templates (管理用テンプレート)]** の順に展開し、**[Control Panel (コントロール パネル)]** を展開してから **[Personalization (個人用設定)]** をクリックします。
+![AZ-800_Lab1_24](./media/AZ-800_Lab1_24.png)
 
-   ![AZ-800_Lab1_25](./media/AZ-800_Lab1_25.png)
+> **※Prevent access to registry editing tools (レジストリ編集ツールへアクセスできないようにする)ポリシーを有効化すると、Windows のレジストリ エディター (Regedit.exe) を無効にします。ユーザーがRegedit.exeを実行しようとすると、「この操作はポリシー設定によって禁止されています」というメッセージが表示されるようになります。**
 
-1. 詳細ペインで、**[Screen saver timeout (スクリーン セーバーのタイムアウト)]** ポリシー設定をダブルクリックします。
+9. ナビゲーション ペインに戻り、 **[User Configuration (ユーザーの構成)] - [Policies (ポリシー)] - [Administrative Templates (管理用テンプレート)]** の順に展開し、**[Control Panel (コントロール パネル)]** を展開してから **[Personalization (個人用設定)]** をクリックします。
 
-   ![AZ-800_Lab1_26](./media/AZ-800_Lab1_26.png)
+![AZ-800_Lab1_25](./media/AZ-800_Lab1_25.png)
 
-1. **[Screen saver timeout (スクリーン セーバーのタイムアウト)]** ダイアログ ボックスで、**[Enabled (有効)]** を選択します。 **[Seconds (秒)]** テキスト ボックスに「**600**」と入力してから、**[OK]** をクリックします。 
+10. 詳細ペインで、**[Screen saver timeout (スクリーン セーバーのタイムアウト)]** ポリシー設定をダブルクリックします。
 
-   ![AZ-800_Lab1_27](./media/AZ-800_Lab1_27.png)
+![AZ-800_Lab1_26](./media/AZ-800_Lab1_26.png)
 
-   > **※Screen saver timeout (スクリーン セーバーのタイムアウト)ポリシーを有効化すると、スクリーンセーバーの起動する時間(秒単位)を指定できます。ラボでは600秒で設定したため、600秒コンピューターでの作業が行われない場合はスクリーンセーバーが起動するようになります。**
+11. **[Screen saver timeout (スクリーン セーバーのタイムアウト)]** ダイアログ ボックスで、**[Enabled (有効)]** を選択します。 **[Seconds (秒)]** テキスト ボックスに「**600**」と入力してから、**[OK]** をクリックします。 
 
-   
+![AZ-800_Lab1_27](./media/AZ-800_Lab1_27.png)
 
-1. ポリシー一覧に戻り、 **[Password protect the screen saver (パスワードでスクリーン セーバーを保護する)]** ポリシー設定をダブルクリックします。
+> **※Screen saver timeout (スクリーン セーバーのタイムアウト)ポリシーを有効化すると、スクリーンセーバーの起動する時間(秒単位)を指定できます。ラボでは600秒で設定したため、600秒コンピューターでの作業が行われない場合はスクリーンセーバーが起動するようになります。**
 
-   ![AZ-800_Lab1_28](./media/AZ-800_Lab1_28.png)
 
-1. **[Password protect the screen saver (スクリーン セーバーをパスワードで保護する)]** ダイアログ ボックスで、**[Enabled (有効)]** を選んでから、**[OK]** をクリックします。
 
-   
+12. ポリシー一覧に戻り、 **[Password protect the screen saver (パスワードでスクリーン セーバーを保護する)]** ポリシー設定をダブルクリックします。
 
-   ![AZ-800_Lab1_29](./media/AZ-800_Lab1_29.png)
+![AZ-800_Lab1_28](./media/AZ-800_Lab1_28.png)
 
-   > **※[Password protect the screen saver (スクリーン セーバーをパスワードで保護する)] ポリシーを有効にすると、すべてのスクリーン セーバーはパスワードで保護されます。また、有効化することで、コントロール パネルの [個人用設定] の [スクリーン セーバー] ダイアログにある [パスワード保護] チェック ボックスが無効になります。ユーザーはパスワード保護設定を変更できなくなります。**
+13. **[Password protect the screen saver (スクリーン セーバーをパスワードで保護する)]** ダイアログ ボックスで、**[Enabled (有効)]** を選んでから、**[OK]** をクリックします。
 
-   
 
-1. 設定したポリシーが **[Enabled]** になっていることを確認し、 **[Group Policy Management Editor (グループ ポリシー管理エディター)]** ウィンドウを × で閉じます。
 
-   ![AZ-800_Lab1_30](./media/AZ-800_Lab1_30.png)
+![AZ-800_Lab1_29](./media/AZ-800_Lab1_29.png)
+
+> **※[Password protect the screen saver (スクリーン セーバーをパスワードで保護する)] ポリシーを有効にすると、すべてのスクリーン セーバーはパスワードで保護されます。また、有効化することで、コントロール パネルの [個人用設定] の [スクリーン セーバー] ダイアログにある [パスワード保護] チェック ボックスが無効になります。ユーザーはパスワード保護設定を変更できなくなります。**
+
+
+
+14. 設定したポリシーが **[Enabled]** になっていることを確認し、 **[Group Policy Management Editor (グループ ポリシー管理エディター)]** ウィンドウを × で閉じます。
+
+![AZ-800_Lab1_30](./media/AZ-800_Lab1_30.png)
 
 ### <a name="task-2-link-the-gpo"></a>タスク 2: GPO をリンクする
 
