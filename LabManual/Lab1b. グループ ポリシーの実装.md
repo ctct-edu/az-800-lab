@@ -216,17 +216,18 @@ Contoso Ltd. のITチームでは、組織のコンプライアンスに準拠�
 
    ※確認メッセージが表示される場合がありますが、 **[OK]** をクリックして閉じて構いません。
 
-1.  **[Group Policy Management Editor]** が起動したら、**[User Configuration (ユーザーの構成)] - [Policies (ポリシー)] - [Administrative Templates (管理用テンプレート)] - [Control Panel (コントロール パネル)]** を展開してから **[Personalization (個人用設定)]** をクリックします。
 
-1. **[Screen saver timeout (スクリーン セーバーのタイムアウト)]** ポリシー設定をダブルクリックします。
+6. **[Group Policy Management Editor]** が起動したら、**[User Configuration (ユーザーの構成)] - [Policies (ポリシー)] - [Administrative Templates (管理用テンプレート)] - [Control Panel (コントロール パネル)]** を展開してから **[Personalization (個人用設定)]** をクリックします。
 
-1. **[Disabled (無効)]** を選択してから、**[OK]** をクリックします。
+7. **[Screen saver timeout (スクリーン セーバーのタイムアウト)]** ポリシー設定をダブルクリックします。
 
-   ![AZ-800_Lab1_42](./media/AZ-800_Lab1_42.png)
+8. **[Disabled (無効)]** を選択してから、**[OK]** をクリックします。
 
-   > **注 : Contoso.com ドメインにリンク済みの、 [CONTOSO Standards GPO] では [Screen saver timeout (スクリーン セーバーのタイムアウト)] ポリシーを有効化し、600秒で設定しているため、競合が発生します。**
+![AZ-800_Lab1_42](./media/AZ-800_Lab1_42.png)
 
-1. **[Group Policy Management Editor (グループ ポリシー管理エディター)]** ウィンドウを **×** で閉じます。
+> **注 : Contoso.com ドメインにリンク済みの、 [CONTOSO Standards GPO] では [Screen saver timeout (スクリーン セーバーのタイムアウト)] ポリシーを有効化し、600秒で設定しているため、競合が発生します。**
+
+9. **[Group Policy Management Editor (グループ ポリシー管理エディター)]** ウィンドウを **×** で閉じます。
 
 ### <a name="task-5-verify-the-order-of-precedence"></a>オプション 2 : 優先順位を確認する
 
