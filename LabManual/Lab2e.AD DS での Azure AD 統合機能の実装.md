@@ -180,9 +180,9 @@ lab:
 
    <img src="./media/AZ-800_Lab2_68.png" alt="AZ-800_Lab2_68" style="zoom:80%;" />
 
-1. **[Azure AD Connect]** ページ に戻り、 **[ユーザーサインオン]** から、 **[パススルー認証]** を選択します。
+1. **[Azure AD Connect]** の **[Connect 同期]** ページ に戻り、 **[ユーザーサインオン]** から、 **[パススルー認証]** を選択します。
 
-   <img src="./media/AZ-800_Lab2_69.png" alt="AZ-800_Lab2_69" style="zoom:67%;" />
+   ![](./media/AZ-800_Lab2_85.png)
 
 1. **[パススルー認証]** ページで、 **[認証エージェント]** の下にあるサーバー名を確認します。
 
