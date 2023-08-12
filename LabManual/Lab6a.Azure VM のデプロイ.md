@@ -48,7 +48,7 @@ Azure ベースの操作を効率化するために、Azure VM へ Windows Serve
 
 ### <a name="task-2-generate-an-arm-template-and-parameters-files-by-using-the-azure-portal"></a>タスク 1: Azure portal を使用して Azure VMを作成する
 
-1. **SEA-ADM1** で Microsoft Edge を起動し、Azure portal (`https://portal.azure.com`)を参照して、Azure  のグローバル管理者ロールの資格情報でサインインします。(資格情報は、ラボの **[Home]** タブ内で提供されているものを使用してください。)
+1. **SEA-ADM1** で Microsoft Edge を起動し、Azure portal (`https://portal.azure.com`)を参照して、Azure  プライマリユーザーの資格情報でサインインします。(資格情報は、ラボの **[Home]** タブ内で提供されているものを使用してください。)
 
 2. **SEA-ADM1** のAzure portal で、ツールバーの  **[リソース、サービス、およびドキュメントの検索]** テキスト ボックスで、 **[Virtual machines]** を検索して選択します。
 
