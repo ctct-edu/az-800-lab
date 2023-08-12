@@ -73,7 +73,7 @@ lab:
 
 ### <a name="task-2-enable-powershell-remoting-on-an-azure-vm"></a>タスク 2: Azure VM の PowerShell リモート処理を有効にする
 
-1. ツールバーの **[リソース、サービス、およびドキュメントの検索]** テキスト ボックスで、 **[Virtual Machines]** を検索して選択します。
+1. Azure Portalに接続しているブラウザのタブに切り替え、ツールバーの **[リソース、サービス、およびドキュメントの検索]** テキスト ボックスで、 **[Virtual Machines]** を検索して選択します。
 
 1.  **[Virtual Machines]** ページで、 **az800l04-vm0** を選択します。
 
