@@ -214,28 +214,45 @@ lab:
 
    ```powershell
    New-Item -Type Directory -Path '\\SEA-SVR1.contoso.com\C$\Temp' -Force
-   
+   ```
+
+   ```powershell
    Copy-Item -Path "$env:USERPROFILE\Downloads\AzureADPasswordProtectionProxySetup.exe" -Destination '\\SEA-SVR1.contoso.com\C$\Temp\'
-   
+   ```
+
+   ```powershell
    Invoke-Command -ComputerName SEA-SVR1.contoso.com -ScriptBlock { Start-Process -FilePath C:\Temp\AzureADPasswordProtectionProxySetup.exe -ArgumentList '/quiet /log C:\Temp\AzureADPPProxyInstall.log' -Wait }
    ```
+
+   
 
 1. 次のコマンドレットを実行して **SEA-DC1** に **C:\Temp** ディレクトリを作成し、**AzureADPasswordProtectionDCAgentSetup.msi** インストーラーをそのディレクトリにコピーし、インストールを実行します。インストールが完了したらドメイン コントローラーを再起動します。
 
    ```powershell
    New-Item -Type Directory -Path '\\SEA-DC1.contoso.com\C$\Temp' -Force
-   
+   ```
+
+   ```powershell
    Copy-Item -Path "$env:USERPROFILE\Downloads\AzureADPasswordProtectionDCAgentSetup.msi" -Destination '\\SEA-DC1.contoso.com\C$\Temp\'
-   
+   ```
+
+   ```powershell
    Invoke-Command -ComputerName SEA-DC1.contoso.com -ScriptBlock { Start-Process msiexec.exe -ArgumentList '/i C:\Temp\AzureADPasswordProtectionDCAgentSetup.msi /quiet /qn /norestart /log C:\Temp\AzureADPPInstall.log' -Wait }
-   
+   ```
+
+   ```powershell
    Restart-Computer -ComputerName SEA-DC1.contoso.com -Force
    ```
+
+   
 
 1. 次のコマンドレットを実行して、 Azure AD パスワード保護を実装するために必要なサービスが作成されたことを確認します。※結果が返ってくるまでに数分かかります。
 
    ```powershell
    Get-Service -Computer SEA-SVR1 -Name AzureADPasswordProtectionProxy | fl
+   ```
+
+   ```powershell
    Get-Service -Computer SEA-DC1 -Name AzureADPasswordProtectionDCAgent | fl
    ```
 
@@ -259,31 +276,31 @@ lab:
 
 1. Windows PowerShell コンソールに戻り、次のコマンドレットを実行して、SEA-SVR1へのPowerShell リモート セッションを終了します。
 
-   ```powershell
-   Exit-PSsession
-   ```
+    ```powershell
+    Exit-PSsession
+    ```
 
-   
+    
 
 1. **Windows PowerShell** コンソールで、次のコマンドレットを実行して、**SEA-DC1** への PowerShell リモート処理セッションを開始します。
 
-    ```powershell
-    Enter-PSSession -ComputerName SEA-DC1
-    ```
+     ```powershell
+     Enter-PSSession -ComputerName SEA-DC1
+     ```
 
 1. PowerShell リモート処理セッション内で次のコマンドレットを実行し、プロキシ サービスを Active Directory に登録します (-AccountUpn の値、 `<Azure_AD_Global_Admin>` は、 Azure AD グローバル管理者ユーザー アカウントのユーザー プリンシパル名に置き換えます)。
 
-    ```powershell
-    Register-AzureADPasswordProtectionForest -AccountUpn <Azure_AD_Global_Admin> -AuthenticateUsingDeviceCode
-    ```
+     ```powershell
+     Register-AzureADPasswordProtectionForest -AccountUpn <Azure_AD_Global_Admin> -AuthenticateUsingDeviceCode
+     ```
 
 1. Microsoft Edgeから、https://microsoft.com/devicelogin、にアクセスし、実行結果に表示された [code] を入力して認証します。
 
 1. Windows PowerShell コンソールに戻り、次のコマンドレットを実行して、SEA-DC1へのPowerShell リモート セッションを終了します。
 
-   ```powershell
-   Exit-PSsession
-   ```
+    ```powershell
+    Exit-PSsession
+    ```
 
 ### <a name="task-6-enable-password-protection-in-azure"></a>タスク 6: Azure でパスワード保護を有効にする
 
