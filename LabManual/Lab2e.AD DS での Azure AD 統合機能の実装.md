@@ -103,35 +103,35 @@ lab:
 
    <img src="./media/AZ-800_Lab2_57.png" alt="AZ-800_Lab2_57" style="zoom:67%;" />
 
-1.  **[Microsoft Azure Active Directory Connect]** ウィンドウで、**[Configure (構成)]** をクリックします。
+1. **[Microsoft Azure Active Directory Connect]** ウィンドウで、**[Configure (構成)]** をクリックします。
 
    <img src="./media/AZ-800_Lab2_58.png" alt="AZ-800_Lab2_58" style="zoom:67%;" />
 
-1.  **[Additional tasks (追加のタスク)]** 画面で、**[Customize synchronization options (同期オプションのカスタマイズ)]** を選択し、 **[Next (次へ)]** をクリックします。
+3. **[Additional tasks (追加のタスク)]** 画面で、**[Customize synchronization options (同期オプションのカスタマイズ)]** を選択し、 **[Next (次へ)]** をクリックします。
 
-   <img src="./media/AZ-800_Lab2_59.png" alt="AZ-800_Lab2_59" style="zoom:67%;" />
+<img src="./media/AZ-800_Lab2_59.png" alt="AZ-800_Lab2_59" style="zoom:67%;" />
 
-1.  **[Connect to Azure AD (Azure AD への接続)]** 画面で、Azure AD グローバル管理者ユーザー アカウントのユーザー名とパスワードを入力し、 **[Next (次へ)]** をクリックします。※資格情報は、ラボの [Home] タブで提供されているアカウントを使用してください。
+4. **[Connect to Azure AD (Azure AD への接続)]** 画面で、Azure AD グローバル管理者ユーザー アカウントのユーザー名とパスワードを入力し、 **[Next (次へ)]** をクリックします。※資格情報は、ラボの [Home] タブで提供されているアカウントを使用してください。
 
-   <img src="./media/AZ-800_Lab2_60.png" alt="AZ-800_Lab2_60" style="zoom:67%;" />
+<img src="./media/AZ-800_Lab2_60.png" alt="AZ-800_Lab2_60" style="zoom:67%;" />
 
-   
 
-1.  **[Connect your directories]** 画面では、規定値のまま **[Next (次へ)]** をクリックします。
 
-1. **[Domain and OU filtering]** 画面では、規定値のまま **[Next (次へ)]** をクリックします。
+5. **[Connect your directories]** 画面では、規定値のまま **[Next (次へ)]** をクリックします。
 
-1. **[Optional features (オプション機能)]** 画面で、**[Password writeback (パスワード ライトバック)]** にチェックを入れ、 [Next (次へ)] をクリックします。
+6. **[Domain and OU filtering]** 画面では、規定値のまま **[Next (次へ)]** をクリックします。
 
-   <img src="./media/AZ-800_Lab2_61.png" alt="AZ-800_Lab2_61" style="zoom:67%;" />
+7. **[Optional features (オプション機能)]** 画面で、**[Password writeback (パスワード ライトバック)]** にチェックを入れ、 [Next (次へ)] をクリックします。
 
-   > **注**: **Active Directory ユーザーのセルフサービス パスワード リセットには、パスワード ライトバックが必要です。 パスワードライトバックによって、Azure AD 内のユーザーによってパスワードが変更され、Active Directory に同期されます。**
+<img src="./media/AZ-800_Lab2_61.png" alt="AZ-800_Lab2_61" style="zoom:67%;" />
 
-1. **[Ready to configure (構成の準備完了)]** 画面が表示されたら、**[Configure (構成)]** をクリックします。
+> **注**: **Active Directory ユーザーのセルフサービス パスワード リセットには、パスワード ライトバックが必要です。 パスワードライトバックによって、Azure AD 内のユーザーによってパスワードが変更され、Active Directory に同期されます。**
 
-   ※構成が完了するまでに数分かかります。
+8. **[Ready to configure (構成の準備完了)]** 画面が表示されたら、**[Configure (構成)]** をクリックします。
 
-1. 構成が完了したら、 **[Exit]** をクリックし、 **[Microsoft Azure Active Directory Connect]** ウィンドウを閉じます。
+​       ※構成が完了するまでに数分かかります。
+
+9. 構成が完了したら、 **[Exit]** をクリックし、 **[Microsoft Azure Active Directory Connect]** ウィンドウを閉じます。
 
 ### <a name="task-3-enable-pass-through-authentication-in-azure-ad-connect"></a>タスク 3: Azure AD Connect でパススルー認証を有効にする
 
