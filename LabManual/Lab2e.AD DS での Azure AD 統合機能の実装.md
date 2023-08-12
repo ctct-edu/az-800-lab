@@ -155,7 +155,7 @@ lab:
 
 1. **[Forest credentials]** ダイアログ ボックスで、次の資格情報を入力し、 **[OK]** をクリックします。
 
-   - Username: **Administrator**
+   - Username: **Contoso\Administrator**
    - Password: **Pa55w.rd**
 
 1. **[Enable single sign-on (シングル サインオンを有効にする)]** ページで、**[Enter credentials (資格情報の入力)]** の横に緑色のチェック マークが表示されているのを確認したら、 [Next (次へ)] をクリックします。
