@@ -270,7 +270,7 @@ lab:
    Register-AzureADPasswordProtectionProxy -AccountUpn <Azure_AD_Global_Admin> -AuthenticateUsingDeviceCode
    ```
 
-1. Microsoft Edgeから、https://microsoft.com/devicelogin、にアクセスし、実行結果に表示された [code] を入力して認証します。
+1. Microsoft Edgeから、`https://microsoft.com/devicelogin`、にアクセスし、実行結果に表示された [code] を入力して認証します。
 
 1. プロンプトが表示されたら、Azure AD グローバル管理者ユーザー アカウントの資格情報を使用して認証します。
 
@@ -294,7 +294,7 @@ lab:
      Register-AzureADPasswordProtectionForest -AccountUpn <Azure_AD_Global_Admin> -AuthenticateUsingDeviceCode
      ```
 
-1. Microsoft Edgeから、https://microsoft.com/devicelogin、にアクセスし、実行結果に表示された [code] を入力して認証します。
+1. Microsoft Edgeから、 `https://microsoft.com/devicelogin`、 にアクセスし、実行結果に表示された [code] を入力して認証します。
 
 1. Windows PowerShell コンソールに戻り、次のコマンドレットを実行して、SEA-DC1へのPowerShell リモート セッションを終了します。
 
