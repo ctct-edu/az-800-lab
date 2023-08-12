@@ -170,9 +170,11 @@ lab:
 
 1. **SEA-ADM1** の、Azure portal で **[Azure Active Directory]** の左ナビゲーションペインの一覧から、 **[Azure AD Connect]** を選択します。
 
-1. **[Azure AD Connect]** ページの、**[ユーザー サインイン]** の下に表示されている、**[シームレス なシングル サインオン]** を選択します。
+1. **[Azure AD Connect]** ページで、**[Connect 同期]** を選択します。
 
-   <img src="./media/AZ-800_Lab2_67.png" alt="AZ-800_Lab2_67" style="zoom:67%;" />
+1. **[Connect 同期]** ページの **[ユーザーサインイン]** の下にある、**[シームレス なシングル サインオン]** を選択します。
+
+   ![](./media/AZ-800_Lab2_84.png)
 
 1. **[シームレス シングル サインオン]** ページで、オンプレミスのドメイン名を確認します。※オンプレミスドメイン名は、Contoso.com になっています。
 
