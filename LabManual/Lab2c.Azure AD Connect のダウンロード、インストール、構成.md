@@ -54,9 +54,7 @@ Azure AD Connect をダウンロードし、**SEA-ADM1** にインストール�
 
 1. **[Azure AD Connect]** ページの左ペインから **[Connect 同期]** を選択し、**[Azure AD Connect のダウンロード]** リンクをクリックします。
 
-1. **[Microsoft Azure Active Directory Connect]** ページで、 **[Download]** をクリックします。
-
-   ![AZ-800_Lab2_24](./media/AZ-800_Lab2_24.png)
+1. **[Azure AD Connect]** ページで、 **[Download]** をクリックします。
 
 1. ステータス バーで、**[AzureAD Connect.msi]** ファイルの  **[Open file]** を選択します。
 
