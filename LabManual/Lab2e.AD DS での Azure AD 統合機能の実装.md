@@ -176,11 +176,11 @@ lab:
 
    ![](./media/AZ-800_Lab2_84.png)
 
-1. **[シームレス シングル サインオン]** ページで、オンプレミスのドメイン名を確認します。※オンプレミスドメイン名は、Contoso.com になっています。
+1. **[シームレス シングル サインイン]** ページで、オンプレミスのドメイン名を確認します。※オンプレミスドメイン名は、Contoso.com になっています。
 
    <img src="./media/AZ-800_Lab2_68.png" alt="AZ-800_Lab2_68" style="zoom:80%;" />
 
-1. **[Azure AD Connect]** の **[Connect 同期]** ページ に戻り、 **[ユーザーサインオン]** から、 **[パススルー認証]** を選択します。
+1. **[Azure AD Connect]** の **[Connect 同期]** ページ に戻り、 **[ユーザーサインイン]** から、 **[パススルー認証]** を選択します。
 
    ![](./media/AZ-800_Lab2_85.png)
 
@@ -194,17 +194,13 @@ lab:
 
 1. **SEA-ADM1** の Microsoft Edge で、Azure Portal とは別のタブを開き、Microsoft ダウンロード Web サイトを`https://www.microsoft.com/en-us/download/details.aspx?id=57071`を参照します。
 
-1. Microsoft ダウンロード Web サイトにある、「**Azure AD Password Protection for Windows Server Active Directory**」の、**[Download]** をクリックします。
+1. Microsoft ダウンロード Web サイトにある、「**Azure AD Password Protection**」の、**[Download]** をクリックします。
 
-   ![AZ-800_Lab2_71](./media/AZ-800_Lab2_71.png)
-
-1. **AzureADPasswordProtectionProxySetup.exe** と **AzureADPasswordProtectionDCAgentSetup.msi** を選択し、 **[Next]** をクリックします。
-
-   ![AZ-800_Lab2_72](./media/AZ-800_Lab2_72.png)
+1. **AzureADPasswordProtectionProxySetup.exe** と **AzureADPasswordProtectionDCAgentSetup.msi** を選択し、 **[Download]** をクリックします。
 
    > **注: プロキシ サービスは、ドメインコントローラー以外のサーバーにインストールすることが推奨されています。 また、プロキシ サービスは、Azure AD Connect エージェントと同じサーバーにはインストールできません。 このラボでは、プロキシ サービスは SEA-SVR1 、パスワード保護 DC エージェントは SEA-DC1 にインストールします。**
 
-1. ブラウザに表示される、「Download multipul files (複数のファイルをダウンロード)」ダイアログボックスで [Allow (許可)] をクリックします。
+1. ブラウザに表示される、 **「Download multipul files (複数のファイルをダウンロード)」** ダイアログボックスで  **[Allow (許可)]** をクリックします。
 
    ![AZ-800_Lab2_73](./media/AZ-800_Lab2_73.png)
 
