@@ -46,7 +46,7 @@ DFS レプリケーション環境を File Sync に移行するための準備�
 
 ### <a name="task-1-create-an-azure-file-share"></a>タスク 1: Azure ファイル共有を作成する
 
-1. **SEA-ADM1** で Microsoft Edge を起動し、Azure portal `https://portal.azure.com`にアクセスして、このラボで使用するサブスクリプションの所有者ロールを持つユーザー アカウントの資格情報を使用してサインインします。(資格情報は、ラボの **[Home]** タブ内で提供されているものを使用してください。)
+1. **SEA-ADM1** で Microsoft Edge を起動し、Azure portal `https://portal.azure.com`にアクセスして、このラボで使用する Azure の資格情報を使用してサインインします。(資格情報は、ラボの **[Home]** タブ内で提供されているものを使用してください。)
 
    ※Azure Portal にサインイン後は、必要に応じ、右上の歯車マーク(設定)画面から、言語設定を日本語に変更できます。
 
