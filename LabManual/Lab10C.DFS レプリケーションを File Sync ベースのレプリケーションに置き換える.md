@@ -56,7 +56,7 @@ lab:
 
 2. Microsoft ダウンロード ページに移動したら、 **[Download]** をクリックします。
 
-![AZ-800_Lab10_14](./media/AZ-800_Lab10_14.png)
+![](./media/AZ-800_Lab10_14.png)
 
 
 
