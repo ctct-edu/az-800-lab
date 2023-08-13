@@ -257,7 +257,7 @@ Contoso の リサーチ グループの下位部門には、約 50 人のユー
 
 ![AZ-800_Lab7_28](./media/AZ-800_Lab7_28.png)
 
-14. **[Select from failover relationships which are already configured on this server  (このサーバーで既に構成されているフェールオーバー関係から選択する)]** 画面で、**[Next (次へ)]** を選択し、**[Finish (完了)]**をクリックします。
+14. **[Select from failover relationships which are already configured on this server  (このサーバーで既に構成されているフェールオーバー関係から選択する)]** 画面で、**[Next (次へ)]** を選択し、 **[Finish (完了)]** をクリックします。
 
 15. **[Configure Failover]** ウィザード画面が表示されたら、 **[Finish (終了)]** をクリックします。
 
