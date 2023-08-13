@@ -164,7 +164,7 @@ lab:
    Enable-NetFirewallRule -Group "@FirewallAPI.dll,-28502"
    ```
 
-1. **SEA-ADM1**  のタスクバーから **エクスプローラー**を起動します。
+1. **SEA-ADM1**  のタスクバーから **ファイルエクスプローラー**を起動します。
 
 1. ファイル エクスプローラーウィンドウのアドレスバーに `\\SEA-SVR3.contoso.com\t$`と入力し、検索します。
 
