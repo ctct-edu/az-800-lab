@@ -108,7 +108,7 @@ Contoso,Ltd で使用しているドライブ **M** は使用量が多く、一�
 11. **[ Network access (ネットワーク アクセス)]** ウィンドウに戻り、 **[Share (共有)]** をクリックします。 **[Your folder is shared (フォルダーは共有されています)]** ウィンドウが表示されたら、 **[Done (完了)]** をクリックします。
 12. **[Server Manager]** ウィンドウに戻り、**[Add Roles and Features Wizard installation succeeded (役割と機能の追加ウィザードのインストールが成功しました)]** ページで、**[Close (閉じる)]** をクリックします。
 
-13. **SEA-SVR3** のコンソール セッションに切り替え、パスワード Pa55w.rd を使用して **CONTOSO\\Administrator** としてサインインします。
+13. **SEA-SVR3** のコンソール セッションに切り替え、パスワード  **Pa55w.rd**  を使用して **CONTOSO\\Administrator** としてサインインします。
 
 14. **SConfig** メニューが表示された場合は、 **[Enter number to select an option]** で **15** と入力し、Enter キーを押して PowerShellコンソール セッションを一度終了します。
 
