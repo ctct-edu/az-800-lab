@@ -80,9 +80,7 @@ Contoso のロンドン本社とシアトルを拠点とするブランチ オ�
    Install-WindowsFeature -Name RSAT-DFS-Mgmt-Con -IncludeManagementTools
    ```
 
-2. タスクバーから、 **[エクスプローラー]** を選択します。
-
-3. ファイル エクスプローラーが起動したら、`C:\Labfiles\Lab10`を参照します。
+2.  **SEA-ADM1** の **[ファイルエクスプローラー]** で`C:\Labfiles\Lab10`を参照します。
 
 4. `C:\Labfiles\Lab10` 配下にあるスクリプトファイル、 **L10_DeployDFS.ps1** を選択してから右クリックし、メニューから **[Edit (編集)]** を選択します。
 
