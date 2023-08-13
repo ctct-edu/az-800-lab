@@ -38,9 +38,8 @@ Contoso の経営陣は、iSCSI を使用して、一元化された記憶域を
 1. **SEA-ADM1** を選択します。
 1. 次の資格情報を使用してサインインします。
 
-   - ユーザー名: **Administrator**
+   - ユーザー名: **Contoso\Administrator**
    - パスワード: **Pa55w.rd**
-   - ドメイン: **CONTOSO**
 
 このラボでは、仮想マシンのみを使用します。
 
