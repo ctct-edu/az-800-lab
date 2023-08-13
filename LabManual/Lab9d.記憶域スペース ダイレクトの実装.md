@@ -70,7 +70,7 @@ lab:
 
 7.  6の手順を繰り返し、 **SEA-SVR1、SEA- SVR2** のすべてのディスクをオンラインにします。
 
-8.  EA-ADM1の  **[スタート]** メニューで **[ Windows PowerShell ISE ]** を起動します。
+8.  **SEA-ADM1** の  **[スタート]** メニューで **[ Windows PowerShell ISE ]** を起動します。
 
 9.  **Windows PowerShell ISE** で、左上の **[File (ファイル)]** メニューを展開し、 **[Open (開く)]** をクリックします。ダイアログ ボックスが表示されたら、 `C:\Labfiles\Lab09`に移動します。
 
