@@ -32,14 +32,10 @@ Contoso では、オンプレミスとは別に、Azure VM の管理も検討し
 仮想マシン:  **SEA-ADM1** を使用します。
 
 1. **SEA-ADM1** を選択します。
-
 1. 次の資格情報を使用してサインインします。
 
-   - ユーザー名: **Administrator**
-   
+   - ユーザー名: **Contoso\Administrator**
    - パスワード: **Pa55w.rd**
-   
-   - ドメイン: **CONTOSO**
    
 
 このラボでは、仮想マシンと Azure サブスクリプションを使用します。 
@@ -70,7 +66,7 @@ Contoso では、オンプレミスとは別に、Azure VM の管理も検討し
 
 ### <a name="task-1-create-an-azure-resource-group-by-using-an-azure-resource-manager-template"></a>タスク 1: 事前に作成されたリソース グループを特定する
 
-1. **SEA-ADM1** で Microsoft Edge を起動し、Azure portal (`https://portal.azure.com`)を参照して、Azure AD のグローバル管理者ロールの資格情報でサインインします。(資格情報は、ラボの **[Home]** タブ内で提供されているものを使用してください。)
+1. **SEA-ADM1** で Microsoft Edge を起動し、Azure portal (`https://portal.azure.com`)を参照して、Azure の資格情報でサインインします。(資格情報は、ラボの **[Home]** タブ内で提供されているものを使用してください。)
 
    ※Azure Portal にサインイン後は、必要に応じ、言語設定を日本語に変更できます。
 
