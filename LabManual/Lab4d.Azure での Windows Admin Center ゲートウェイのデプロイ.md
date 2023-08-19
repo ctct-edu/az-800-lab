@@ -14,15 +14,15 @@ Windows Admin Center を使用して、Windows Server OS を実行している A
 
 このラボを完了すると、次のことができるようになります。
 
-- Azure で Windows Admin Center ゲートウェイをデプロイします。
-- Azure で Windows Admin Center ゲートウェイの機能を検証します。
+- Azure で Windows Admin Center ゲートウェイをデプロイする
+- Azure で Windows Admin Center ゲートウェイの機能を検証する
 
 この演習の主なタスクは次のとおりです。
 
-1. Azure で Windows Admin Center ゲートウェイをインストールする。
-1. スクリプト プロビジョニングの結果を確認する。
+1. Azure で Windows Admin Center ゲートウェイをインストールする
+1. スクリプト プロビジョニングの結果を確認する
 
-## <a name="estimated-time-90-minutes"></a>予想所要時間: 30 分
+## <a name="estimated-time-30-minutes"></a>予想所要時間: 30 分
 
 ## <a name="architecture"></a>アーキテクチャの図
 
@@ -38,11 +38,9 @@ Windows Admin Center を使用して、Windows Server OS を実行している A
 
 1. 次の資格情報を使用してサインインします。
 
-   - ユーザー名: **Administrator**
+   - ユーザー名: **Contoso\Administrator**
    
    - パスワード: **Pa55w.rd**
-   
-   - ドメイン: **CONTOSO**
    
      
 
