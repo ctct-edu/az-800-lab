@@ -14,15 +14,15 @@ lab:
 
 このラボを完了すると、次のことができるようになります。
 
-- Azure で Windows Admin Center ゲートウェイの機能を検証します。
+- Azure で Windows Admin Center ゲートウェイの機能を検証する
 
 この演習の主なタスクは次のとおりです。
 
-1. Azure VM で実行されている Windows Admin Center ゲートウェイに接続する。
-1. Azure VM の PowerShell リモート処理を有効にする。
-1. Azure VM で実行されている Windows Admin Center ゲートウェイを使用して、Azure VM に接続する。
+1. Azure VM で実行されている Windows Admin Center ゲートウェイに接続する
+1. Azure VM の PowerShell リモート処理を有効にする
+1. Azure VM で実行されている Windows Admin Center ゲートウェイを使用して、Azure VM に接続する
 
-## <a name="estimated-time-90-minutes"></a>予想所要時間: 30 分
+## <a name="estimated-time-30-minutes"></a>予想所要時間: 30 分
 
 ## <a name="architecture"></a>アーキテクチャの図
 
@@ -38,11 +38,9 @@ lab:
 
 1. 次の資格情報を使用してサインインします。
 
-   - ユーザー名: **Administrator**
+   - ユーザー名: **Contoso\Administrator**
    
    - パスワード: **Pa55w.rd**
-   
-   - ドメイン: **CONTOSO**
    
      
 
