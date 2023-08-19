@@ -14,14 +14,14 @@ lab:
 
 このラボを完了すると、次のことができるようになります。
 
-- Azure ネットワーク アダプターを使用してハイブリッド接続をテストします。
-- Azure で Windows Admin Center ゲートウェイをデプロイします。
+- Azure ネットワーク アダプターを使用してハイブリッド接続をテストする
+- Azure で Windows Admin Center ゲートウェイをデプロイする
 
 この演習の主なタスクは次のとおりです。
 
-1. Azure VM に Gateway Subnet を作成する。
-1. Windows Admin Center を Azure に登録する。
-1. Azure ネットワーク アダプターを作成する。
+1. Azure VM に Gateway Subnet を作成する
+1. Windows Admin Center を Azure に登録する
+1. Azure ネットワーク アダプターを作成する
 
 ## <a name="estimated-time-90-minutes"></a>予想所要時間: 60 分
 
@@ -39,11 +39,9 @@ lab:
 
 1. 次の資格情報を使用してサインインします。
 
-   - ユーザー名: **Administrator**
+   - ユーザー名: **Contoso\Administrator**
    
    - パスワード: **Pa55w.rd**
-   
-   - ドメイン: **CONTOSO**
    
      
 
